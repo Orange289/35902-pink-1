@@ -1,0 +1,140 @@
+.contacts {
+  display: flex;
+  width: 100%;
+
+  fieldset {
+    border: none;
+    display: flex;
+    padding-top: 33px;
+  }
+
+}
+
+.contacts__form {
+  justify-content: center;
+  width: 280px;
+  padding-bottom: 55px;
+}
+
+.contacts__title {
+  display: none;
+}
+
+.contacts__wrapper {
+  @include container();
+}
+
+.contacts__label-nomobile {
+  display: none;
+}
+
+.contacts__input-nomobile {
+  display: none;
+}
+
+.contacts__label {
+  @include font-4(30px);
+  color: #d22856;
+  display: block;
+  text-transform: uppercase;
+  padding-left: 23px;
+  padding-bottom: 6px;
+}
+
+.contacts__input {
+  @include font-name;
+  @include font-5;
+  // flex-grow: 1;
+  width: 280px;
+  margin-bottom: 16px;
+  padding-left: 23px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border: none;
+  border: 2px solid #e5e5e5;
+}
+
+.contacts__input:nth-of-type(3) {
+  margin-bottom: 0;
+}
+
+
+@media ($tablet-widths) {
+
+  .contacts {
+    order: 2;
+    margin-top: 20px;
+
+    fieldset {
+      border: 2px solid #e5e5e5;
+      width: auto;
+    }
+
+  }
+
+  .contacts__form {
+    width: auto;
+    // display: flex;
+    // background-color: green;
+  }
+
+  .contacts__title {
+    display: block;
+    @include font-4(30px);
+    color: #d22856;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .contacts__label {
+    display: none;
+  }
+
+  .contacts__input {
+    display: none;
+  }
+
+  .contacts__label-nomobile {
+    @include font-4(30px);
+    color: #d22856;
+    display: block;
+    text-transform: uppercase;
+    padding-left: 83px;
+    padding-top: 6px;
+    flex-shrink: 0;
+    padding-bottom: 28px;
+  }
+
+  .contacts__label-nomobile:last-child {
+    padding-bottom: 23px;
+  }
+
+  .contacts__input-nomobile {
+    display: flex;
+    @include font-name;
+    @include font-5;
+    border: none;
+    border: 2px solid #e5e5e5;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    // width: 100%;
+    // width: 500px;
+    margin-left: 60px;
+    padding-left: 20px;
+    margin-right: 60px;
+    flex-basis: 1500px;
+    flex-grow: 1;
+  }
+
+}
+
+
+@media ($desktop-widths) {
+
+  .contacts {
+    margin-top: 0;
+  }
+
+}

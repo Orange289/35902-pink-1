@@ -1,0 +1,349 @@
+.advantages {
+  position: relative;
+
+  b {
+    @include font-3;
+    padding: 0;
+    margin: 0;
+  }
+
+}
+
+.advantages__content {
+  @include font-4;
+  padding: 0;
+  margin: 0;
+  margin-top: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.advantages__header {
+  text-align: center;
+  background-color: #ffffff;
+  padding-top: 41px;
+  padding-bottom: 70px;
+  margin: 0;
+}
+
+.advantages__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 29px;
+  @include font-2;
+}
+
+.advantages__title:last-child {
+  padding: 0;
+ }
+
+.advantages__list {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-top: 50px;
+  position: relative;
+}
+
+.advantages__list::before {
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 99%;
+  height: 8%;
+  background-color: #f2f2f2;
+  transform: rotate(-5deg);
+}
+
+
+.advantages__item {
+  margin-bottom: 33px;
+  color: #283645;
+}
+
+.advantages__img {
+  display: block;
+}
+
+.advantages__img--mono, .advantages__img--pink {
+  display: none;
+}
+
+.advantages__img--smile {
+  // position: absolute;
+  // top: 84%;
+  // left: 30%;
+  margin: 0 auto;
+  @include size(157px, 320px);
+  background-image: url('../img/iphone-screen-mobile@1x.png');
+}
+
+.advantages__effect {
+  display: none;
+}
+
+
+@media ($tablet-widths) {
+
+  .advantages {
+    // width: 700px;
+  }
+
+  .advantages__header {
+    padding-bottom: 100px;
+  }
+
+  .advantages__title {
+    @include font-param(40px, 48px, 300);
+    padding: 0;
+  }
+
+  .advantages__title:nth-child(2) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .advantages__list {
+    // width: 310px;
+    // max-height: 365px;
+    padding-left: 350px;
+    padding-right: 40px;
+    padding-bottom: 43px;
+    padding-top: 28px;
+    text-align: left;
+    @include clearfix();
+  }
+
+  .advantages__list::before {
+    top: -27px;
+    left: 5px;
+    height: 12%;
+    transform: rotate(-3deg);
+    background-color: red;
+    content: '';
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 0;
+    // height: 0;
+    // border-style: solid;
+    // border-width: 30px  30px 0;
+    // border-color: transparent red transparent transparent;
+  }
+
+  .advantages__content {
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    padding-right: 15px;
+  }
+
+  .advantages__img--smile {
+    position: absolute;
+    background-image: url('../img/iphone-screen-tablet@1x.png');
+    @include size(268px, 548px);
+    top: -45px;
+    left: 40px;
+    z-index: 2;
+  }
+
+  .advantages__effect {
+    display: block;
+    position: relative;
+    z-index: 3;
+    background: url('../img/24hours-tablet.png') 42px 58px no-repeat, #ffffff;
+    margin-top: -40px;
+    padding-left: 345px;
+    padding-top: 97px;
+    padding-bottom: 130px;
+
+    b {
+      display: block;
+      padding: 0;
+      margin: 0;
+      @include font-param(30px, 36px, 600, #000000);
+    }
+
+    b:nth-child(2) {
+      display: none;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+      margin-top: 15px;
+      margin-bottom: 8px;
+      @include font-4;
+    }
+
+    a {
+      @include font-4;
+      text-decoration: underline;
+      color: #d22856;
+    }
+
+  }
+
+}
+
+
+@media ($desktop-widths) {
+
+  .advantages {
+    width: 1200px;
+
+    b {
+      @include font-param(30px, 30px, 600, #000000);
+      position: relative;
+      z-index: 4;
+    }
+
+  }
+
+  .advantages__header {
+    padding-bottom: 165px;
+    padding-top: 70px;
+  }
+
+  .advantages__title:nth-child(2) {
+    padding-left: 320px;
+    padding-right: 320px;
+  }
+
+  .advantages__content {
+    @include font-5;
+    margin-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .advantages__list {
+    width: 100%;
+    padding: 0;
+    padding-top: 266px;
+    text-align: center;
+    position: relative;
+  }
+
+  .advantages__item {
+    width: 270px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 47px;
+  }
+
+  .advantages__item:nth-child(1) {
+    width: 280px;
+  }
+
+  .advantages__item:nth-child(3) b {
+      display: block;
+      padding-right: 35px;
+      padding-left: 35px;
+      line-height: 35px;
+  }
+
+  .advantages__item:last-child {
+    margin-right: 0;
+  }
+
+  .advantages__images {
+    position: relative;
+  }
+
+  .advantages__img {
+    position: absolute;
+    @include size(294px, 382px);
+    z-index: 2;
+  }
+
+  .advantages__img--mono {
+    display: block;
+    top: -90px;
+    left: 122px;
+    background-image: url('../img/iphone-screen-desktop-mono@1x.png');
+  }
+
+  .advantages__img--mono::after {
+    content: '';
+    position: absolute;
+    top: 302px;
+    left: 0px;
+    background-color: #f2f2f2;
+    @include size(270px, 122px);
+    z-index: 3;
+  }
+
+  .advantages__img--pink {
+    display: block;
+    top: -90px;
+    left: 439px;
+    background-image: url('../img/iphone-screen-desktop@1x.png');
+  }
+
+  .advantages__img--pink::after {
+    content: '';
+    position: absolute;
+    top: 302px;
+    left: 0px;
+    background-color: #f2f2f2;
+    @include size(270px, 122px);
+    z-index: 3;
+  }
+
+  .advantages__img--smile {
+    position: absolute;
+    top: -90px;
+    left: 759px;
+    @include size(294px, 382px);
+    background-image: url('../img/iphone-screen-desktop-smile@1x.png');
+    z-index: 2;
+  }
+
+  .advantages__img--smile::after {
+    content: '';
+    position: absolute;
+    top: 302px;
+    left: 0px;
+    background-color: #f2f2f2;
+    @include size(270px, 122px);
+    z-index: 3;
+  }
+
+  .advantages__effect {
+    margin: 0;
+    padding: 0;
+    padding-left: 497px;
+    padding-top: 128px;
+    padding-bottom: 150px;
+    background: url('../img/24hours-desktop.png') 132px 33px no-repeat, #f2f2f2;
+    position: relative;
+
+    b:nth-child(2) {
+      display: block;
+      line-height: 30px;
+    }
+
+    b:nth-child(1) {
+      display: none;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      padding-top: 29px;
+      padding-bottom: 27px;
+      padding-right: 210px;
+      @include font-5;
+    }
+
+    a {
+      @include font-5;
+      color: #d22856;
+    }
+
+  }
+
+}

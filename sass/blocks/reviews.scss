@@ -1,0 +1,163 @@
+.reviews {
+  background-color: #ffffff;
+  margin-top: -42px;
+  padding-top: 39px;
+  position: relative;
+  z-index: 6;
+
+  p {
+    @include font-4(30px);
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 34px;
+  }
+
+}
+
+.reviews__prev {
+  display: none;
+}
+
+.reviews__next {
+  display: none;
+}
+
+.reviews__wrapper {
+  @include container();
+  position: relative;
+}
+
+.reviews__author-data {
+  display: none;
+}
+
+.reviews__item {
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.reviews__item:nth-child(n+2){
+  display: none;
+}
+
+.reviews__author {
+  @include font-3(30px);
+  font-style: normal;
+}
+
+.reviews__toggles {
+  margin: 0 auto;
+  padding-bottom: 43px;
+}
+
+@include toggle(reviews-input-1);
+@include toggle(reviews-input-2);
+@include toggle(reviews-input-3);
+
+
+@media ($tablet-widths) {
+
+  .reviews {
+    margin-top: -44px;
+
+    p {
+      @include font-5;
+    }
+
+  }
+
+  .reviews__author {
+    @include font-param(20px, 30px, 600, #000000);
+    position: absolute;
+    top: 162px;
+    left: 224px;
+  }
+
+  .reviews__author-data {
+    display: block;
+    @include font-4(30px);
+  }
+
+  .reviews__item {
+    width: auto;
+  }
+
+  .reviews__toggles {
+    padding-top: 99px;
+    padding-bottom: 53px;
+  }
+
+}
+
+
+@media ($desktop-widths) {
+
+  .reviews {
+    padding-top: 172px;
+    padding-bottom: 179px;
+    position: relative;
+
+    p {
+      width: 680px;
+      margin: 0 auto;
+    }
+
+    p::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: 440px;
+      @include size(79px, 63px);
+      background-image: url('../img/quotes.png');
+    }
+
+  }
+
+  .reviews__quotes {
+    display: none;
+  }
+
+  .reviews__author {
+    @include font-param(24px, 30px, 600, #000000);
+    top: 132px;
+    left: 357px;
+  }
+
+  .reviews__author-data {
+    @include font-5;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
+
+  .reviews__prev {
+    font-size: 0;
+    position: absolute;
+    top: 38px;
+    left: 6px;
+    display: block;
+    @include size(29px, 29px);
+    border-left: 2px solid #c2c6ca;
+    border-bottom: 2px solid #c2c6ca;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+  .reviews__next {
+    font-size: 0;
+    position: absolute;
+    top: 38px;
+    left: 903px;
+    display: block;
+    @include size(29px, 29px);
+    border-right: 2px solid #c2c6ca;
+    border-top: 2px solid #c2c6ca;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+}

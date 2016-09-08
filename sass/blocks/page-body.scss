@@ -1,0 +1,23 @@
+@font-face {
+  @include font-setup($font-1-local, $font-1-url1, $font-1-url2);
+}
+@font-face {
+  @include font-setup($font-2-local, $font-2-url1, $font-2-url2);
+}
+@font-face {
+  @include font-setup($font-3-local, $font-3-url1, $font-3-url2);
+}
+
+.page-body {
+  @include font-name;
+  @include font-4(30px);
+  font-size: 0;
+  background-color: #939393;
+  margin: 0;
+  padding: 0;
+
+  a {
+    text-decoration: none;
+  }
+
+}
