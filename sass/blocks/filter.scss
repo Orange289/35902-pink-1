@@ -1,0 +1,38 @@
+.filter {
+  text-align: center;
+  padding-top: 20px;
+  .filter__title {
+    padding-bottom: 23px;
+  }
+  .filter__content {
+    background-color: #f2f2f2;
+  }
+  .filter__range {
+    display: block;
+    margin: 0 auto;
+  }
+  .filter__range--disabled {
+    display: none;
+  }
+  .filter__btns {
+    border-top: 1px solid #dddfe0;
+    padding-top: 38px;
+    padding-bottom: 41px;
+  }
+  .filter__btn {
+    line-height: 18px;
+    color: #d22856;
+    display: block;
+    border: 3px solid #d22856;
+    background-color: transparent;
+    border-radius: 30px;
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  .filter__btn--disabled {
+    margin-top: 12px;
+    border-color: #dddfe0;
+    color: #dddfe0;
+  }
+}

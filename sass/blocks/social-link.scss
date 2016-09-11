@@ -1,0 +1,38 @@
+.social-link {
+  display: inline-block;
+  vertical-align: top;
+  // font-size: 0;
+  text-decoration: none;
+
+  &--itunes {
+
+  }
+
+  &--gmarket {
+
+  }
+
+  &--mstore {
+
+  }
+
+  &--circle {
+    background: transparent;
+    @include size(52px);
+    border: 2px solid #e9ebec;
+    border-radius: 50%;
+    margin-right: 7px;
+  }
+
+  &--twitter {
+
+  }
+
+  &--facebook {
+
+  }
+
+  &--youtube {
+
+  }
+}

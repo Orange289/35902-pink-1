@@ -1,0 +1,22 @@
+.slider {
+  text-align: center;
+  position: relative;
+}
+
+.slider__toggles {
+  font-size: 0;
+}
+
+.slider__toggle {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 19px;
+  @include size(6px, 6px);
+  background-color: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__input {
+  display: none;
+}

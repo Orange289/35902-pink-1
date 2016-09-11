@@ -1,0 +1,14 @@
+.page-main--form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+@media ($tablet-widths){
+
+  .page-main {
+    position: relative;
+  }
+
+}

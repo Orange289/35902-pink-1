@@ -1,0 +1,113 @@
+.downloading {
+  background-color: #1d2631;
+  padding-top: 29px;
+
+  p {
+    @include font-1;
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 28px;
+    margin: 0;
+  }
+
+}
+
+.downloading__title {
+  display: none;
+}
+
+.downloading__btn {
+  display: block;
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  border-radius: 30px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.downloading__social {
+  margin-top: 32px;
+  text-align: center;
+}
+
+
+@media ($tablet-widths){
+
+  .downloading {
+    width: 360px;
+    position: absolute;
+    top: -548px;
+    left: 40px;
+    background: none;
+    box-shadow: none;
+
+    p {
+      @include font-5(24px);
+      color: #ffffff;
+      padding-left: 0;
+    }
+
+  }
+
+  .downloading__title {
+    display: block;
+    @include font-param(40px, 50px, 400, #ffffff);
+    width: 180px;
+    text-align: center;
+    margin-left: 57px;
+  }
+
+  .downloading__btn {
+    @include font-3(18px);
+    color: #ffffff;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+
+  .downloading__social {
+    background-color: green;
+    width: 214px;
+    margin-left: 10px;
+  }
+
+}
+
+
+@media ($desktop-widths){
+
+  .downloading {
+    position: absolute;
+    top: -661px;
+    left: 120px;
+
+    p {
+      margin-top: 40px;
+    }
+
+  }
+
+  .downloading__title {
+    display: block;
+    @include font-param(50px, 60px, 400, #ffffff);
+    width: 240px;
+    text-align: center;
+    margin-left: 40px;
+  }
+
+  .downloading__btn {
+    @include font-param(21px, 18px, 600, #ffffff);
+    color: #ffffff;
+    margin-top: 50px;
+    width: 290px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .downloading__social {
+    margin-top: 60px;
+  }
+
+}

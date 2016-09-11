@@ -1,0 +1,8 @@
+.btn {
+  @include font-white-bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

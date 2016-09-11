@@ -1,0 +1,79 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font-setup($l, $u1, $u2) {
+  font-family: 'OpenSans';
+  src:
+    local($l),
+    url($u1) format('woff'),
+    url($u2) format('woff2');
+}
+
+@mixin font-name {
+  font-family: 'OpenSans', 'Arial', sans-serif;
+}
+
+@mixin font-param($s, $l, $w, $c: #283645) {
+  font-size: $s;
+  line-height: $l;
+  font-weight: $w;
+  color: $c;
+};
+
+@mixin font-white-bold($l: 18px) {
+  @include font-param(18px, $l, 600, #ffffff);
+}
+
+@mixin font-1($l: 24px){
+  @include font-param(14px, $l, 400, #ffffff);
+}
+
+@mixin font-2($l: auto){
+  @include font-param(24px, $l, 300);
+}
+
+@mixin font-3($l: 24px) {
+  @include font-param(18px, $l, 600, #000000);
+}
+
+@mixin font-4($l: 24px) {
+  @include font-param(14px, $l, 400);
+}
+
+@mixin font-5($l: 30px) {
+  @include font-param(18px, $l, 400);
+}
+
+@mixin toggle($id) {
+  ##{$id}:checked ~ .slider__toggles .slider__toggle[for='#{$id}'] {
+    background-color: #ffffff;
+    border: 3px solid #283645;
+    @include size(6px, 6px);
+    border-radius: 50%;
+    position:relative;
+    top: -3px;
+  }
+}
+
+@mixin container() {
+  // width: 320px;
+  margin: 0 auto;
+
+  @media ($tablet-widths) {
+      width: 620px;
+  }
+
+  @media ($desktop-widths) {
+      width: 940px;
+  }
+}

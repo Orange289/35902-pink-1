@@ -1,0 +1,129 @@
+.achievements {
+  background-color: #f2f2f2;
+  width: 100%;
+
+  fieldset {
+    border: none;
+    padding-top: 33px;
+  }
+
+}
+
+.achievements__wrapper {
+  @include container();
+}
+
+.achievements__form {
+  padding-top: 33px;
+  padding-bottom: 55px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.achievements__title {
+  @include font-4(18px);
+  color: #d22856;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+  // padding-bottom: 40px;
+}
+
+.achievements__label {
+  display: block;
+  @include font-5;
+	position: relative;
+	cursor: pointer;
+}
+
+.achievements__chbx {
+	margin-left: 5px;
+	margin-bottom: 62px;
+	margin-right: 48px;
+}
+
+.achievements__label:last-child .achievements__chbx {
+	margin-bottom: 0;
+}
+
+.achievements__chbx + .achievements__indicator {
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 33px;
+	height: 33px;
+	border: 3px solid #e5e5e5;
+	background-color: #ffffff;
+}
+
+.achievements__chbx:checked + .achievements__indicator::before {
+	content: '';
+	position: absolute;
+	top: 7px;
+	left: 6px;
+	width: 20px;
+	height: 8px;
+	background-color: transparent;
+	border-left: 3px solid #d22856;
+	border-bottom: 3px solid #d22856;
+	transform: rotate(-49deg);
+}
+
+
+@media ($tablet-widths) {
+
+  .achievements {
+    background-color: #ffffff;
+    margin-top: -40px;
+    order: 3;
+
+    fieldset {
+      display: flex;
+      flex-wrap: wrap;
+      border: 2px solid #e5e5e5;
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
+
+  }
+
+  .achievements__form {
+    width: auto;
+  }
+
+  .achievements__title {
+    line-height: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+    // padding: 0;
+  }
+
+  .achievements__label {
+    @include font-5;
+    // padding-top: 50px;
+  }
+
+}
+
+
+@media ($desktop-widths) {
+
+  .achievements {
+
+    fieldset {
+      flex-direction: column;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-bottom: 44px;
+      // align-items: ;
+    }
+
+  }
+
+  .achievements__label {
+    // display: inline;
+    width: 260px;
+  }
+
+}
