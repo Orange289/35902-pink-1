@@ -1,188 +1,227 @@
 <!DOCTYPE HTML>
-<html lang="ru">
+<html lang='ru'>
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset='utf-8'>
+		<link rel='stylesheet' href='css/normalize.min.css'>
+    <link rel='stylesheet' href='css/style.css'>
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="page-body">
-    <div class="wrapper">
-			<header class='page-header'>
+  <body class='page-body'>
+    <div class='wrapper'>
+			<header>
         <div class='page-header page-header--menu-open page-header--menu-open-inner'>
           <div class='page-header__title page-header__title--menu-open'>
-            <span class='page-header__logo-img'></span>
+						<div class='logo__link logo__link--mob'>
+							<a href='index.html'><img class='logo logo--header-mob' src='img/logo-pink-white-mobile.svg' width='75' height='22'></a>
+						</div>
+						<div class='logo__link logo__link--tab'>
+							<a href='index.html'><img class='logo logo--header-tab' src='img/logo-pink-white-tablet.png' width='147' height='40'></a>
+						</div>
             <input class='page-header__btn page-header__btn--close' type='image' name='button' src='img/icon-menu-cross.svg'>
           </div>
           <nav class='main-nav main-nav--nojs'>
-            <span class='page-header__logo-desktop'></span>
-            <div class='main-nav__wraper'>
-              <span class='main-nav__logo-desktop'></span>
+						<div class='logo__link logo__link--desktop'>
+							<a href='index.html'><img class='logo logo--header-desktop' src='img/logo-pink-white-desktop.png'></a>
+						</div>
+            <div class='main-nav__wrapper'>
               <ul class='main-nav__list'>
-                <li class='main-nav__item main-nav__item--active'><a href='index.html'>Главная</a></li>
-                <li class='main-nav__item'><a href='photo.html'>Фотографии</a></li>
-                <li class='main-nav__item'><a>Конкурс</a></li>
+                <li class='main-nav__item'><a href='index.html'>Главная</a></li>
+                <li class='main-nav__item main-nav__item--active'><a href='photo.html'>Фотографии</a></li>
+                <li class='main-nav__item'><a href='form.html'>Конкурс</a></li>
                 <li class='main-nav__item'><a href='https://htmlacademy.ru/'>Html Academy</a></li>
               </ul>
             </div>
           </nav>
-          <h1>Фотографии пользователей</h1>
         </div>
-        <div class="page-header page-header--menu-close page-header--menu-close-inner">
-          <div class="page-header__title page-header__title--menu-close">
-              <div class="page-header__logo">
-                <a href="index.html"><span class='page-header__logo-img'></span></a>
-              </div>
-              <input class="page-header__btn page-header__btn--open" type="image" name="button" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4wLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL1RSLzIwMDEvUkVDLVNWRy0yMDAxMDkwNC9EVEQvc3ZnMTAuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4wIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSI0OS45NDVweCIgaGVpZ2h0PSIyNC4wMDdweCIgdmlld0JveD0iMCAwIDQ5Ljk0NSAyNC4wMDciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ5Ljk0NSAyNC4wMDciIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGcgaWQ9Im1pdSI+DQoJPGcgaWQ9ImVkaXRvcl9saXN0X3ZpZXdfaGFtYnVnZXJfbWVudV9nbHlwaCI+DQoJCTxnPg0KCQkJPHBhdGggaWQ9InBhdGgtMSIgZmlsbD0iI0ZGRkZGRiIgZD0iTTEuMTM3LDBDMC41MSwwLDAsMC40MjgsMCwxLjAxdjEuOTgxYzAsMC41NTgsMC40OTQsMS4wMSwxLjEzOSwxLjAxaDQ3LjY3MQ0KCQkJCWMwLjYyOCwwLDEuMTM4LTAuNDI4LDEuMTM4LTEuMDFWMS4wMWMwLTAuNTU4LTAuNDk0LTEuMDEtMS4xMzgtMS4wMUgxLjEzN3ogTTEuMTM3LDEwLjAwM0MwLjUxLDEwLjAwMywwLDEwLjQzMSwwLDExLjAxM3YxLjk4DQoJCQkJYzAsMC41NTcsMC40OTQsMS4wMSwxLjEzOSwxLjAxaDQ3LjY3MWMwLjYyOCwwLDEuMTM4LTAuNDI4LDEuMTM4LTEuMDF2LTEuOThjMC0wLjU1OC0wLjQ5NC0xLjAxLTEuMTM4LTEuMDFIMS4xMzd6DQoJCQkJIE0xLjEzNywyMC4wMDVDMC41MSwyMC4wMDUsMCwyMC40MzQsMCwyMS4wMTZ2MS45ODFjMCwwLjU1NywwLjQ5NCwxLjAxLDEuMTM5LDEuMDFoNDcuNjcxYzAuNjI4LDAsMS4xMzgtMC40MjgsMS4xMzgtMS4wMQ0KCQkJCXYtMS45ODFjMC0wLjU1OC0wLjQ5NC0xLjAxMS0xLjEzOC0xLjAxMUgxLjEzN3oiLz4NCgkJPC9nPg0KCQk8Zz4NCgkJCTxwYXRoIGlkPSJwYXRoLTFfMV8iIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xLjEzNywwQzAuNTEsMCwwLDAuNDI4LDAsMS4wMXYxLjk4MWMwLDAuNTU4LDAuNDk0LDEuMDEsMS4xMzksMS4wMWg0Ny42NzENCgkJCQljMC42MjgsMCwxLjEzOC0wLjQyOCwxLjEzOC0xLjAxVjEuMDFjMC0wLjU1OC0wLjQ5NC0xLjAxLTEuMTM4LTEuMDFIMS4xMzd6IE0xLjEzNywxMC4wMDNDMC41MSwxMC4wMDMsMCwxMC40MzEsMCwxMS4wMTN2MS45OA0KCQkJCWMwLDAuNTU3LDAuNDk0LDEuMDEsMS4xMzksMS4wMWg0Ny42NzFjMC42MjgsMCwxLjEzOC0wLjQyOCwxLjEzOC0xLjAxdi0xLjk4YzAtMC41NTgtMC40OTQtMS4wMS0xLjEzOC0xLjAxSDEuMTM3eg0KCQkJCSBNMS4xMzcsMjAuMDA1QzAuNTEsMjAuMDA1LDAsMjAuNDM0LDAsMjEuMDE2djEuOTgxYzAsMC41NTcsMC40OTQsMS4wMSwxLjEzOSwxLjAxaDQ3LjY3MWMwLjYyOCwwLDEuMTM4LTAuNDI4LDEuMTM4LTEuMDENCgkJCQl2LTEuOTgxYzAtMC41NTgtMC40OTQtMS4wMTEtMS4xMzgtMS4wMTFIMS4xMzd6Ii8+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==">
+        <div class='page-header page-header--menu-close page-header--menu-close-inner'>
+          <div class='page-header__title page-header__title--menu-close'>
+						<div class='logo__link logo__link--mob'>
+							<a href='index.html'><img class='logo logo--header-mob' src='img/logo-pink-white-mobile.svg' width='75' height='22'></a>
+						</div>
+						<div class='logo__link logo__link--tab'>
+							<a href='index.html'><img class='logo logo--header-tab' src='img/logo-pink-white-tablet.png' width='147' height='40'></a>
+						</div>
+						<input class='page-header__btn page-header__btn--open' type='image' name='button' src='img/icon-menu-burger.svg'>
           </div>
-          <h1>Фотографии пользователей</h1>
         </div>
       </header>
-      <main>
-        <section class="photos">
-          <p class="photos__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          <div class="photos__list">
-            <div class="photos__item photos__item--panorama">
-              <a class="photos__big" href="#">
-                <img class="photos__panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама дня" width="320" height="137">
+      <main class='page-main page-main--photo'>
+				<section class='page-main__intro page-main__intro--inner'>
+					<h1>Фотографии пользователей</h1>
+				</section>
+        <section class='photos'>
+          <p class='photos__slogan'>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <div class='photos__list'>
+            <div class='photos__item photos__item--panorama'>
+              <a class='photos__image photos__image--panorama' href='#'>
+                <img src='img/panorama-mobile@1x.jpg' alt='Панорама дня' width='320' height='137'>
               </a>
-              <div class="photos__panorama-title">
-                <span>Панорама дня</span>
-              </div>
-              <div class="container">
-                <div class="photos__description">
-                  <div class="photos__author">
-                    <span class="photos__who">Анна</span>
-                    <span class="photos__when">(5 минут назад)</span>
+              <div class='photos__wrapper'>
+                <div class='comment'>
+                  <div class='comment__author'>
+                    <b class='comment__who'>Анна</b>
+                    <time class='comment__when'>(5 минут назад)</time>
                   </div>
-                  <p class="photos_description-content">
+                  <p class='comment__content'>
                     Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе,
                     задавайте свои вопросы!
                   </p>
-                  <span class="photos__likes">Нравится: 215</span>
+                  <div class='user-actions'>
+                    <span class='user-actions__likes'>Нравится: 215</span>
+                  </div>
                 </div>
               </div>
-
             </div>
-            <div class="photos__item container">
-              <a class="photos__big" href="#">
-                <img class="photos__img" src="img/photo-1-mobile@1x.jpg" alt="Фото Левона" width="280" height="180">
-              </a>
-              <div class="photos__description">
-                <div class="photos__author">
-                  <span class="photos__who">Левон</span>
-                  <span class="photos__when">(5 часов назад)</span>
+            <div class='photos__item'>
+              <div class='photos__wrapper'>
+                <a class='photos__image' href='#'>
+                  <img src='img/photo-1-mobile@1x.jpg' alt='Фото Левона' width='280' height='180'>
+                </a>
+                <div class='comment'>
+                  <div class='comment__author'>
+                    <b class='comment__who'>Левон</b>
+                    <time class='comment__when'>(5 часов назад)</time>
+                  </div>
+                  <p class='comment__content'>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <div class='user-actions'>
+                    <span class='user-actions__likes'>Нравится: 356</span>
+                  </div>
                 </div>
-                <p class="photos_description-content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <span class="photos__likes">Нравится: 356</span>
               </div>
             </div>
-            <div class="photos__item container">
-              <a class="photos__big" href="#">
-                <img class="photos__img" src="img/photo-2-mobile@1x.jpg" alt="Фото Антона" width="280" height="180">
-              </a>
-              <div class="photos__description">
-                <div class="photos__author">
-                  <span class="photos__who">Антон</span>
-                  <span class="photos__when">(12 часов назад)</span>
+            <div class='photos__item'>
+              <div class='photos__wrapper'>
+                <a class='photos__image' href='#'>
+                  <img src='img/photo-2-mobile@1x.jpg' alt='Фото Антона' width='280' height='180'>
+                </a>
+                <div class='comment'>
+                  <div class='comment__author'>
+                    <b class='comment__who'>Антон</b>
+                    <time class='comment__when'>(12 часов назад)</time>
+                  </div>
+                  <p class='comment__content'>Соседи будут рады!</p>
+                  <div class='user-actions'>
+                    <span class='user-actions__likes'>Нравится: 666</span>
+                  </div>
                 </div>
-                <p class="photos_description-content">Соседи будут рады!</p>
-                <span class="photos__likes">Нравится: 666</span>
               </div>
             </div>
-            <div class="photos__item container">
-              <a class="photos__big" href="#">
-                <img class="photos__img" src="img/photo-3-mobile@1x.jpg" alt="Фото Бориса" width="280" height="180">
-              </a>
-              <div class="photos__description">
-                <div class="photos__author">
-                  <span class="photos__who">Борис</span>
-                  <span class="photos__when">(20 часов назад)</span>
+            <div class='photos__item'>
+              <div class='photos__wrapper'>
+                <a class='photos__image' href='#'>
+                  <img src='img/photo-3-mobile@1x.jpg' alt='Фото Бориса' width='280' height='180'>
+                </a>
+                <div class='comment'>
+                  <div class='comment__author'>
+                    <b class='comment__who'>Борис</b>
+                    <time class='comment__when'>(20 часов назад)</time>
+                  </div>
+                  <p class='comment__content'>Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <div class='user-actions'>
+                    <span class='user-actions__likes'>Нравится: 215</span>
+                  </div>
                 </div>
-                <p class="photos_description-content">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <span class="photos__likes">Нравится: 215</span>
               </div>
             </div>
-            <div class="photos__item container">
-              <a class="photos__big" href="#">
-                <img class="photos__img" src="img/photo-4-mobile@1x.jpg" alt="Фото Сергея" width="280" height="180">
-              </a>
-              <div class="photos__description">
-                <div class="photos__author">
-                  <span class="photos__who">Сергей</span>
-                  <span class="photos__when">(25 часов назад)</span>
+            <div class='photos__item'>
+              <div class='photos__wrapper'>
+                <a class='photos__image' href='#'>
+                  <img src='img/photo-4-mobile@1x.jpg' alt='Фото Сергея' width='280' height='180'>
+                </a>
+                <div class='comment'>
+                  <div class='comment__author'>
+                    <b class='comment__who'>Сергей</b>
+                    <time class='comment__when'>(25 часов назад)</time>
+                  </div>
+                  <p class='comment__content'>Самая кубанская в мире!</p>
+                  <div class='user-actions'>
+                    <span class='user-actions__likes'>Нравится: 4</span>
+                  </div>
                 </div>
-                <p class="photos_description-content">Самая кубанская в мире!</p>
-                <span class="photos__likes">Нравится: 4</span>
               </div>
             </div>
-            <div class="photos__item container">
-              <a class="photos__big" href="#">
-                <img class="photos__img" src="img/photo-5-mobile@1x.jpg" alt="Фото Максима" width="280" height="180">
-              </a>
-              <div class="photos__description">
-                <div class="photos__author">
-                  <span class="photos__who">Максим</span>
-                  <span class="photos__when">(40 часов назад)</span>
+            <div class='photos__item'>
+              <div class='photos__wrapper'>
+                <a class='photos__image' href='#'>
+                  <img src='img/photo-5-mobile@1x.jpg' alt='Фото Максима' width='280' height='180'>
+                </a>
+                <div class='comment'>
+                  <div class='comment__author'>
+                    <b class='comment__who'>Максим</b>
+                    <time class='comment__when'>(40 часов назад)</time>
+                  </div>
+                  <p class='comment__content'>Где снег-то?</p>
+                  <div class='user-actions'>
+                    <span class='user-actions__likes'>Нравится: 150</span>
+                  </div>
                 </div>
-                <p class="photos_description-content">Где снег-то?</p>
-                <span class="photos__likes">Нравится: 150</span>
               </div>
             </div>
-            <div class="photos__item container">
-              <a class="photos__big" href="#">
-                <img class="photos__img" src="img/photo-6-mobile@1x.jpg" alt="Фото Надежды" width="280" height="180">
-              </a>
-              <div class="photos__description">
-                <div class="photos__author">
-                  <span class="photos__who">Надежда</span>
-                  <span class="photos__when">(45 часов назад)</span>
+            <div class='photos__item'>
+              <div class='photos__wrapper'>
+                <a class='photos__image' href='#'>
+                  <img src='img/photo-6-mobile@1x.jpg' alt='Фото Надежды' width='280' height='180'>
+                </a>
+                <div class='comment'>
+                  <div class='comment__author'>
+                    <b class='comment__who'>Надежда</b>
+                    <time class='comment__when'>(45 часов назад)</time>
+                  </div>
+                  <p class='comment__content'>Всем GM и взаимные лайки!</p>
+                  <div class='user-actions'>
+                    <span class='user-actions__likes'>Нравится: 2560</span>
+                  </div>
                 </div>
-                <p class="photos_description-content">Всем GM и взаимные лайки!</p>
-                <span class="photos__likes">Нравится: 2560</span>
               </div>
             </div>
           </div>
         </section>
-        <section class="filter">
-          <div class="container">
-            <p class="filter__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+        <section class='photo-filter'>
+          <div class='container'>
+            <p class='photo-filter__title'>Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
           </div>
-          <div class="filter__content">
-            <div class="container">
-              <a class="photos__big" href="#">
-                <img src="img/photo-7-mobile@1x.jpg" alt="Ваше фото" width="280" height="374">
+          <div class='photo-filter__content'>
+            <form class='photo-filter__form' action='#' method='post'>
+              <a class='photos__image photos__image--filter' href='#'>
+                <img src='img/photo-7-mobile@1x.jpg' alt='Ваше фото' width='280' height='374'>
               </a>
-              <form class="filter__form" action="#" method="post">
-                <div class="filter__toggles">
-                  <label class="filter__item" for="range-1">Кадрирование</label>
-                  <label class="filter__item filter__item--disabled" for="range-2">Заливка</label>
-                  <label class="filter__item filter__item--disabled" for="range-3">Контраст</label>
+              <div class='photo-filter__options'>
+                <div class='photo-filter__actions'>
+                  <label class='photo-filter__item' for='range-1'>Кадрирование</label>
+                  <label class='photo-filter__item photo-filter__item--disabled' for='range-2'>Заливка</label>
+                  <label class='photo-filter__item photo-filter__item--disabled' for='range-3'>Контраст</label>
                 </div>
-                <input class="filter__range" id="range-1" type="range" min="0" max="10" step="1">
-                <input class="filter__range filter__range--disabled" id="range-2" type="range" min="0" max="10" step="1">
-                <input class="filter__range filter__range--disabled" id="range-3" type="range" min="0" max="10" step="1">
-              </form>
-            </div>
-            <div class="filter__btns">
-              <div class="container">
-                <button class="filter__btn btn" type="submit">Запостить</button>
-                <button class="filter__btn btn filter__btn--disabled" type="submit" disabled>Отмена</button>
+                <div class='photo-filter__controllers'>
+                  <input class='photo-filter__range' id='range-1' type='range' min='0' max='10' step='1'>
+                  <input class='photo-filter__range photo-filter__range--disabled' id='range-2' type='range' min='0' max='10' step='1'>
+                  <input class='photo-filter__range photo-filter__range--disabled' id='range-3' type='range' min='0' max='10' step='1'>
+                </div>
               </div>
+            </form>
+            <div class='photo-filter__btns'>
+              <button class='btn btn--filter' type='submit'>Запостить</button>
+              <button class='btn btn--filter btn--filter-disabled' type='submit' disabled>Отмена</button>
             </div>
           </div>
         </section>
       </main>
-			<footer class='social-footer social-footer--inner'>
-				<div class='social-footer__wrapper'>
-					<span class='social-footer__logo'></span>
-					<div class='social-footer__btns'>
-						<a class='social-link social-link--twitter social-link--circle' href='#'>twitter</a>
-						<a class='social-link social-link--facebook social-link--circle' href='#'>facebook</a>
-						<a class='social-link social-link--youtube social-link--circle' href='#'>youtube</a>
-					</div>
-					<span class='social-footer__copyright'>Разработано</span>
-				</div>
-			</footer>
+      <footer class='page-footer'>
+        <section class='social social--inner'>
+  				<div class='page-footer__wrapper'>
+            <img class='logo logo--footer-tab' src='img/logo-pink-footer.svg' alt='' width='147' height='40'>
+            <img class='logo logo--footer-desktop' src='img/logo-pink-footer-desktop.png' alt='' width='147' height='40'>
+  					<div class='social__btns'>
+  						<a class='social__link social__link--twitter social__link--circle' href='#'>twitter</a>
+  						<a class='social__link social__link--facebook social__link--circle' href='#'>facebook</a>
+  						<a class='social__link social__link--youtube social__link--circle' href='#'>youtube</a>
+  					</div>
+            <div class='social__copyright'>
+              <p>Разработано</p>
+              <a href="http://htmlacademy.ru"><img src='img/htmlacademy.svg' alt='htmlacademy' width='27' height='34'></a>
+            </div>
+  				</div>
+  			</section>
+      </footer>
     </div>
   </body>
 </html>

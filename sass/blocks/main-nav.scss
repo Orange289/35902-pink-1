@@ -45,7 +45,7 @@
 
   }
 
-  .main-nav__wraper {
+  .main-nav__wrapper {
     @include container();
     @include clearfix();
   }
@@ -59,12 +59,6 @@
     border: none;
     float: left;
     margin-left: 80px;
-  }
-
-  .main-nav__logo-desktop {
-    float: left;
-    width: 147px;
-    background: url('../img/logo-pink-white-desktop.svg') no-repeat;
   }
 
 }

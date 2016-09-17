@@ -1,7 +1,47 @@
+.page-main__intro {
+	background-color: #1d2631;
+	padding-top: 29px;
+
+	p {
+		@include font-1;
+		text-align: center;
+		padding-left: 45px;
+		padding-right: 45px;
+		padding-bottom: 28px;
+		margin: 0;
+	}
+
+	span {
+		display: none;
+	}
+
+}
+
+.page-main__intro--inner {
+	background: none;
+	position: absolute;
+	top: 340px;
+
+	h1 {
+		@include font-2;
+		color: #ffffff;
+		width: 230px;
+		text-align: center;
+		padding-top: 25px;
+	}
+
+}
+
 .page-main--form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.page-main--photo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 
@@ -10,5 +50,64 @@
   .page-main {
     position: relative;
   }
+
+	.page-main__intro {
+		width: 360px;
+		position: absolute;
+		top: -548px;
+		left: 40px;
+		background: none;
+		box-shadow: none;
+
+		p {
+			@include font-5(24px);
+			color: #ffffff;
+			padding-left: 0;
+		}
+
+		span {
+			display: block;
+			@include font-param(40px, 50px, 400, #ffffff);
+			width: 180px;
+			text-align: center;
+			margin-left: 57px;
+		}
+
+	}
+
+	.page-main__intro--inner {
+		top: -310px;
+		width: 500px;
+
+		h1 {
+			@include font-param(50px, 60px, 300, #ffffff);
+			width: 500px;
+		}
+
+	}
+
+}
+
+
+@media ($desktop-widths) {
+
+	.page-main__intro {
+		position: absolute;
+		top: -661px;
+		left: 120px;
+
+		p {
+			margin-top: 40px;
+		}
+
+		span {
+			display: block;
+			@include font-param(50px, 60px, 400, #ffffff);
+			width: 240px;
+			text-align: center;
+			margin-left: 40px;
+		}
+
+	}
 
 }

@@ -12,6 +12,7 @@
 .page-footer__wrapper {
   @include container();
   @include clearfix();
+	position: relative;
 }
 
 .page-footer__map {

@@ -5,4 +5,77 @@
   border: none;
   outline: none;
   cursor: pointer;
+
+	&--download {
+		display: block;
+	  border: 3px solid #ffffff;
+	  background-color: transparent;
+	  border-radius: 30px;
+	  padding-top: 13px;
+	  padding-bottom: 13px;
+	  width: 280px;
+	  margin: 0 auto;
+	}
+
+	&--form {
+		border-radius: 2px;
+		text-transform: uppercase;
+		background-color: #2aab6d;
+		width: 100%;
+		padding-top: 22px;
+		padding-bottom: 22px;
+	}
+
+	&--filter {
+		line-height: 18px;
+		color: #d22856;
+		display: block;
+		border: 3px solid #d22856;
+		background-color: transparent;
+		border-radius: 30px;
+		width: 100%;
+		padding-top: 13px;
+		padding-bottom: 13px;
+	}
+
+	&--filter-disabled {
+		margin-top: 12px;
+		border-color: #dddfe0;
+		color: #dddfe0;
+	}
+
+}
+
+
+@media ($tablet-widths) {
+
+	.btn {
+
+		&--download {
+			@include font-3(18px);
+			color: #ffffff;
+			margin-top: 30px;
+			margin-left: 5px;
+		}
+
+	}
+
+}
+
+
+@media ($desktop-widths) {
+
+	.btn {
+
+		&--download {
+			@include font-param(21px, 18px, 600, #ffffff);
+			color: #ffffff;
+			margin-top: 50px;
+			width: 290px;
+			margin-left: 0;
+			text-align: center;
+		}
+
+	}
+
 }

@@ -12,6 +12,7 @@
 
 .prices__table {
 	display: table;
+	background: red;
 	padding-bottom: 68px;
 	width: 100%;
 }
@@ -131,7 +132,7 @@
 
 @media ($tablet-widths) {
 
-	.prices__toggles {
+	.prices__controls {
 		display: none;
 	}
 
