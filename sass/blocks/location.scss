@@ -1,5 +1,15 @@
 .location {
 
+	  b {
+	    @include font-param(18px, auto, 600);
+	    display: block;
+	  }
+		
+		p {
+			@include font-2;
+			color: #d22856;
+		}
+
 }
 
 .location__map {
@@ -33,11 +43,6 @@
 	padding-right: 15px;
 }
 
-.location__text {
-	@include font-2;
-	color: #d22856;
-}
-
 .location__link {
 	text-decoration: none;
 	@include font-2;
@@ -45,6 +50,14 @@
 }
 
 @media ($tablet-widths) {
+	
+	.location {
+		
+		b {
+			padding-bottom: 2px;
+		}
+		
+	}
 
 	.location__map {
 		@include size(700px, 848px);
@@ -88,6 +101,14 @@
 
 
 @media ($desktop-widths) {
+	
+	.location {
+		
+		b {
+			padding-bottom: 17px;
+		}
+		
+	}
 
 	.location__map {
 		@include size(1200px, 976px);
