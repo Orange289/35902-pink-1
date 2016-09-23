@@ -1,0 +1,42 @@
+@media ($tablet-widths) {
+
+	.copyright {
+		display: inline-block;
+		@include font-4(18px);
+		color: #283645;
+		margin-top: 0;
+		margin-left: 90px;
+		padding: 0;
+		padding-top: 16px;
+
+		p {
+			display: inline-block;
+			vertical-align: top;
+			margin-top: -1px;
+		}
+
+		a {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 5px;
+			margin-top: -9px;
+		}
+
+		img {
+			width: 27px;
+			height: 34px;
+		}
+		
+	}
+
+}
+
+
+@media ($desktop-widths) {
+
+	.copyright {
+		@include font-5(18px);
+		margin-left: 7px;
+	}
+
+}

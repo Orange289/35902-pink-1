@@ -1,32 +1,32 @@
 .achievements {
-  background-color: #f2f2f2;
-  width: 100%;
+	background-color: #f2f2f2;
+	width: 100%;
 
-  fieldset {
-    border: none;
-    padding-top: 33px;
-  }
+	fieldset {
+		border: none;
+		padding-top: 33px;
+	}
 
 }
 
 .achievements__wrapper {
-  @include container();
+	@include container();
 }
 
 .achievements__form {
-  padding-top: 33px;
-  padding-bottom: 55px;
-  width: 280px;
-  margin: 0 auto;
+	padding-top: 33px;
+	padding-bottom: 55px;
+	width: 280px;
+	margin: 0 auto;
 }
 
 .achievements__title {
-  @include font-4(18px);
-  color: #d22856;
-  text-align: center;
-  text-transform: uppercase;
-  padding-left: 20px;
-  padding-right: 20px;
+	@include font-4(18px);
+	color: #d22856;
+	text-align: center;
+	text-transform: uppercase;
+	padding-left: 20px;
+	padding-right: 20px;
   // padding-bottom: 40px;
 }
 
@@ -73,57 +73,57 @@
 
 @media ($tablet-widths) {
 
-  .achievements {
-    background-color: #ffffff;
-    margin-top: -40px;
-    order: 3;
+	.achievements {
+		background-color: #ffffff;
+		margin-top: -40px;
+		order: 3;
 
-    fieldset {
-      display: flex;
-      flex-wrap: wrap;
-      border: 2px solid #e5e5e5;
-      padding-top: 40px;
-      padding-bottom: 60px;
-    }
+		fieldset {
+			display: flex;
+			flex-wrap: wrap;
+			border: 2px solid #e5e5e5;
+			padding-top: 40px;
+			padding-bottom: 60px;
+		}
 
-  }
+	}
 
-  .achievements__form {
-    width: auto;
-  }
+	.achievements__form {
+		width: auto;
+	}
 
-  .achievements__title {
-    line-height: 30px;
-    padding-left: 35px;
-    padding-right: 35px;
+	.achievements__title {
+		line-height: 30px;
+		padding-left: 35px;
+		padding-right: 35px;
     // padding: 0;
-  }
+	}
 
-  .achievements__label {
-    @include font-5;
+	.achievements__label {
+		@include font-5;
     // padding-top: 50px;
-  }
+	}
 
 }
 
 
 @media ($desktop-widths) {
 
-  .achievements {
+	.achievements {
 
-    fieldset {
-      flex-direction: column;
-      padding-left: 60px;
-      padding-right: 60px;
-      padding-bottom: 44px;
+		fieldset {
+			flex-direction: column;
+			padding-left: 60px;
+			padding-right: 60px;
+			padding-bottom: 44px;
       // align-items: ;
-    }
+		}
 
-  }
+	}
 
-  .achievements__label {
+	.achievements__label {
     // display: inline;
-    width: 260px;
-  }
+		width: 260px;
+	}
 
 }

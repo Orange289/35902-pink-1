@@ -1,0 +1,33 @@
+.footer-bottom {
+	text-align: center;
+	margin-top: 60px;
+
+	&--index {
+		display: none;
+	}
+
+	&--inner {
+		display: block;
+	}
+
+}
+
+
+@media ($tablet-widths) {
+
+	.social {
+		padding-top: 37px;
+		padding-bottom: 38px;
+		margin-top: 58px;
+
+		&--index {
+			display: block;
+			text-align: left;
+		}
+
+	}
+	
+}
+	
+	
+	

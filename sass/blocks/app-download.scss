@@ -1,0 +1,47 @@
+.app-download {
+
+}
+
+.app-download__platforms {
+	margin-top: 32px;
+  text-align: center;
+}
+
+.app-download__link {
+	display: inline-block;
+	vertical-align: top;
+	// font-size: 0;
+	text-decoration: none;
+
+	  &--itunes {
+
+	  }
+
+	  &--gmarket {
+
+	  }
+
+	  &--mstore {
+
+	  }
+
+}
+
+
+@media ($tablet-widths) {
+
+	.app-download__platforms {
+		background-color: green;
+		width: 214px;
+		margin-left: 10px;
+	}
+
+}
+
+@media ($desktop-widths) {
+
+	.app-download__platforms {
+		margin-top: 60px;
+	}
+
+}

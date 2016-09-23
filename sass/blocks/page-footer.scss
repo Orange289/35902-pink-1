@@ -1,17 +1,12 @@
 .page-footer {
   position: relative;
   text-align: center;
-
-  b {
-    @include font-param(18px, auto, 600);
-    display: block;
-  }
-
 }
 
 .page-footer__wrapper {
   @include container();
   @include clearfix();
+	position: relative;
 }
 
 .page-footer__map {
@@ -53,14 +48,6 @@
 
 @media ($tablet-widths) {
 
-  .page-footer {
-
-    b {
-      padding-bottom: 2px;
-    }
-
-  }
-
   .page-footer__map {
     @include size(700px, 848px);
     background: url('../img/bg-map-tablet.jpg') 0 125px no-repeat;
@@ -101,15 +88,8 @@
 
 }
 
+
 @media ($desktop-widths) {
-
-  .page-footer {
-
-    b {
-      padding-bottom: 17px;
-    }
-
-  }
 
   .page-footer__map {
     @include size(1200px, 976px);
