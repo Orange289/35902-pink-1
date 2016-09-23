@@ -1,0 +1,53 @@
+.social {
+	margin-top: 40px;
+}
+
+.social__link {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+
+	&--circle {
+		background: transparent;
+		@include size(52px);
+		border: 2px solid #e9ebec;
+		border-radius: 50%;
+		margin-right: 7px;
+	}
+
+	&--twitter {
+
+	}
+
+	&--facebook {
+
+	}
+
+	&--youtube {
+
+	}
+
+}
+
+@media ($tablet-widths) {
+
+	.social {
+		display: inline-block;
+		margin-top: 0;
+		// margin-right: 83px;
+		vertical-align: top;
+		margin: 0 auto;
+		margin-left: 77px;
+	}
+
+}
+
+
+@media ($desktop-widths) {
+
+	.social{
+		margin-right: 215px;
+		margin-left: 233px;
+	}
+
+}

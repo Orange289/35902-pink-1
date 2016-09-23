@@ -1,169 +1,156 @@
 <!DOCTYPE html>
 <html lang='ru'>
-  <head>
-    <meta charset='utf-8'>
-    <link rel='stylesheet' href='css/style.css'>
-    <link rel='stylesheet' href='css/normalize.min.css'>
-    <title>HTML Academy: Пинк</title>
-    <meta name='viewport' content='width=device-width,initial-scale=1'>
-  </head>
-  <body class='page-body'>
-    <div class='wrapper'>
-      <header class='page-header'>
-        <div class='page-header page-header--menu-open page-header--menu-open-inner'>
-          <div class='page-header__title page-header__title--menu-open'>
-            <span class='page-header__logo-img'></span>
-            <input class='page-header__btn page-header__btn--close' type='image' name='button' src='img/icon-menu-cross.svg'>
-          </div>
-          <nav class='main-nav main-nav--nojs'>
-            <span class='page-header__logo-desktop'></span>
-            <div class='main-nav__wraper'>
-              <span class='main-nav__logo-desktop'></span>
-              <ul class='main-nav__list'>
-                <li class='main-nav__item main-nav__item--active'><a href='index.html'>Главная</a></li>
-                <li class='main-nav__item'><a href='photo.html'>Фотографии</a></li>
-                <li class='main-nav__item'><a>Конкурс</a></li>
-                <li class='main-nav__item'><a href='https://htmlacademy.ru/'>Html Academy</a></li>
-              </ul>
-            </div>
-          </nav>
-          <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
-        </div>
-        <div class="page-header page-header--menu-close page-header--menu-close-inner">
-          <div class="page-header__title page-header__title--menu-close">
-              <div class="page-header__logo">
-                <a href="index.html"><span class='page-header__logo-img'></span></a>
-              </div>
-              <input class="page-header__btn page-header__btn--open" type="image" name="button" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4wLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL1RSLzIwMDEvUkVDLVNWRy0yMDAxMDkwNC9EVEQvc3ZnMTAuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4wIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSI0OS45NDVweCIgaGVpZ2h0PSIyNC4wMDdweCIgdmlld0JveD0iMCAwIDQ5Ljk0NSAyNC4wMDciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ5Ljk0NSAyNC4wMDciIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGcgaWQ9Im1pdSI+DQoJPGcgaWQ9ImVkaXRvcl9saXN0X3ZpZXdfaGFtYnVnZXJfbWVudV9nbHlwaCI+DQoJCTxnPg0KCQkJPHBhdGggaWQ9InBhdGgtMSIgZmlsbD0iI0ZGRkZGRiIgZD0iTTEuMTM3LDBDMC41MSwwLDAsMC40MjgsMCwxLjAxdjEuOTgxYzAsMC41NTgsMC40OTQsMS4wMSwxLjEzOSwxLjAxaDQ3LjY3MQ0KCQkJCWMwLjYyOCwwLDEuMTM4LTAuNDI4LDEuMTM4LTEuMDFWMS4wMWMwLTAuNTU4LTAuNDk0LTEuMDEtMS4xMzgtMS4wMUgxLjEzN3ogTTEuMTM3LDEwLjAwM0MwLjUxLDEwLjAwMywwLDEwLjQzMSwwLDExLjAxM3YxLjk4DQoJCQkJYzAsMC41NTcsMC40OTQsMS4wMSwxLjEzOSwxLjAxaDQ3LjY3MWMwLjYyOCwwLDEuMTM4LTAuNDI4LDEuMTM4LTEuMDF2LTEuOThjMC0wLjU1OC0wLjQ5NC0xLjAxLTEuMTM4LTEuMDFIMS4xMzd6DQoJCQkJIE0xLjEzNywyMC4wMDVDMC41MSwyMC4wMDUsMCwyMC40MzQsMCwyMS4wMTZ2MS45ODFjMCwwLjU1NywwLjQ5NCwxLjAxLDEuMTM5LDEuMDFoNDcuNjcxYzAuNjI4LDAsMS4xMzgtMC40MjgsMS4xMzgtMS4wMQ0KCQkJCXYtMS45ODFjMC0wLjU1OC0wLjQ5NC0xLjAxMS0xLjEzOC0xLjAxMUgxLjEzN3oiLz4NCgkJPC9nPg0KCQk8Zz4NCgkJCTxwYXRoIGlkPSJwYXRoLTFfMV8iIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xLjEzNywwQzAuNTEsMCwwLDAuNDI4LDAsMS4wMXYxLjk4MWMwLDAuNTU4LDAuNDk0LDEuMDEsMS4xMzksMS4wMWg0Ny42NzENCgkJCQljMC42MjgsMCwxLjEzOC0wLjQyOCwxLjEzOC0xLjAxVjEuMDFjMC0wLjU1OC0wLjQ5NC0xLjAxLTEuMTM4LTEuMDFIMS4xMzd6IE0xLjEzNywxMC4wMDNDMC41MSwxMC4wMDMsMCwxMC40MzEsMCwxMS4wMTN2MS45OA0KCQkJCWMwLDAuNTU3LDAuNDk0LDEuMDEsMS4xMzksMS4wMWg0Ny42NzFjMC42MjgsMCwxLjEzOC0wLjQyOCwxLjEzOC0xLjAxdi0xLjk4YzAtMC41NTgtMC40OTQtMS4wMS0xLjEzOC0xLjAxSDEuMTM3eg0KCQkJCSBNMS4xMzcsMjAuMDA1QzAuNTEsMjAuMDA1LDAsMjAuNDM0LDAsMjEuMDE2djEuOTgxYzAsMC41NTcsMC40OTQsMS4wMSwxLjEzOSwxLjAxaDQ3LjY3MWMwLjYyOCwwLDEuMTM4LTAuNDI4LDEuMTM4LTEuMDENCgkJCQl2LTEuOTgxYzAtMC41NTgtMC40OTQtMS4wMTEtMS4xMzgtMS4wMTFIMS4xMzd6Ii8+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==">
-          </div>
-          <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
-        </div>
-      </header>
-      <main class='page-main page-main--form'>
-        <section class="who">
-          <div class="who__wrapper">
-            <p class="who__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-            <form class="who__form" action="#" method="post">
-              <label class="who__label" for="surname"><span>Фамилия:</span>
-                <input class="who__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию">
-              </label>
-              <label class="who__label" for="name"><span>Имя:</span>
-                <input class="who__input" type="text" name="name" id="name" placeholder="Введите ваше имя">
-              </label>
-              <label class="who__label" for="middlename"><span>Отчество:</span>
-                <input class="who__input" type="text" name="middlename" id="middlename" placeholder="Ну и отчество тоже">
-              </label>
-            </form>
-          </div>
-        </section>
-        <section class="achievements">
-          <div class="achievements__wrapper">
-            <form class="achievements__form" action="#" method="post">
-              <fieldset>
-                <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
-                <label class="achievements__label">
-                  <input class="achievements__chbx" type="checkbox" name="selfie" checked>
-                  <span class="achievements__indicator"></span>
-                  Сделал селфи с акулой
-                </label>
-                <label class="achievements__label">
-                  <input class="achievements__chbx" type="checkbox" name="suntan" checked>
-                  <span class="achievements__indicator"></span>
-                  Обгорел на пляже
-                </label>
-                <label class="achievements__label">
-                  <input class="achievements__chbx" type="checkbox" name="chuck">
-                  <span class="achievements__indicator"></span>
-                  Видел Чака Норриса
-                </label>
-                <label class="achievements__label">
-                  <input class="achievements__chbx" type="checkbox" name="souvenirs">
-                  <span class="achievements__indicator"></span>
-                  Накупил сувениров
-                </label>
-                <label class="achievements__label">
-                  <input class="achievements__chbx" type="checkbox" name="tower" checked>
-                  <span class="achievements__indicator"></span>
-                  Удержал башню
-                </label>
-                <label class="achievements__label">
-                  <input class="achievements__chbx" type="checkbox" name="hotel">
-                  <span class="achievements__indicator"></span>
-                  Разгромил отель
-                </label>
-              </fieldset>
-            </form>
-          </div>
-        </section>
-        <section class="contacts">
-          <div class="contacts__wrapper">
-            <form class="contacts__form" action="#" method="post">
-              <fieldset>
-                <legend class="contacts__title">Контактная информация</legend>
-                <label class="contacts__label" for="phone">Номер телефончика:</label>
-                <input class="contacts__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
-                <input class="contacts__input-nomobile" type="tel" name="phone" id="phone-nomobile" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
-                <label class="contacts__label-nomobile" for="phone-nomobile">Номер телефона:</label>
-                <label class="contacts__label" for="e-mail">Адресок почты:</label>
-                <input class="contacts__input" type="email" name="e-mail" id="e-mail" placeholder="E-mail, пожалуйста">
-                <input class="contacts__input-nomobile" type="email" name="e-mail" id="e-mail-nomobile" placeholder="Введите почту">
-                <label class="contacts__label-nomobile" for="e-mail-nomobile">Адрес почты:</label>
-              </fieldset>
-            </form>
-          </div>
-        </section>
-        <section class="application">
-          <div class="application__wrapper">
-            <form class="application__form" action="#" method="post">
-              <fieldset>
-                <legend class="application__title">С каким приложением путешествовали?</legend>
-                <label class="application__label">
-                	<input class="application__radio" type="radio" name="app" checked>
-                  <span class="application__indicator"></span>
-                  Pink для iOS
-                </label>
-                <label class="application__label">
-                  <input class="application__radio" type="radio" name="app">
-                  <span class="application__indicator"></span>
-                  Pink на Android
-                </label>
-                <label class="application__label">
-                  <input class="application__radio" type="radio" name="app">
-                  <span class="application__indicator"></span>
-                  Windows Phone
-                </label>
-              </fieldset>
-            </form>
-          </div>
-        </section>
-        <section class="emotions">
-          <div class="emotions__wrapper">
-            <form class="emotions__form" action="#" method="post">
-              <fieldset>
-                <legend class="emotions__title">Опишите свои эмоции</legend>
-                <textarea class="emotions__text" name="em-text" id="em-text" rows="6">Можно прям в красках, не стесняясь в выражениях
-                </textarea>
-              </fieldset>
-            </form>
-            <button class="emotions__btn btn" type="submit">Отправить форму</button>
-            <div class="emotions__required-fields">
-              <span class="emotions__star">*</span>
-              <span class="emotions__required">— Обязательные поля</span>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class='social-footer social-footer--inner'>
-        <div class='social-footer__wrapper'>
-          <span class='social-footer__logo'></span>
-          <div class='social-footer__btns'>
-            <a class='social-link social-link--twitter social-link--circle' href='#'>twitter</a>
-            <a class='social-link social-link--facebook social-link--circle' href='#'>facebook</a>
-            <a class='social-link social-link--youtube social-link--circle' href='#'>youtube</a>
-          </div>
-          <span class='social-footer__copyright'>Разработано</span>
-        </div>
-      </footer>
-    </div>
-  </body>
+	<head>
+		<meta charset='utf-8'>
+		<link rel='stylesheet' href='css/normalize.min.css'>
+		<link rel='stylesheet' href='css/style.css'>
+		<title>HTML Academy: Пинк</title>
+		<meta name='viewport' content='width=device-width,initial-scale=1'>
+	</head>
+	<body class='page-body'>
+		<header class='page-header'>
+			<div class='wrapper'>
+				<nav class='main-nav main-nav--nojs'>
+					<div class='logo logo--header'>
+						<a href='index.html'><img src='img/logo-pink-white-desktop.png' alt='logo'></a>
+					</div>
+					<button class='page-header__btn page-header__btn--open'>
+					<ul class='main-nav__list'>
+						<li class='main-nav__item'><a href='index.html'>Главная</a></li>
+						<li class='main-nav__item main-nav__item--active'><a href='photo.html'>Фотографии</a></li>
+						<li class='main-nav__item'><a>Конкурс</a></li>
+						<li class='main-nav__item'><a href='https://htmlacademy.ru/'>Html Academy</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class='page-main page-main--form'>
+			<div class='page-main__intro page-main__intro--inner'>
+				<h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+			</div>
+			<div class='wrapper'>
+				<section class='form-content'>
+					<p class='form-content__title'>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+					<form class='form' action='#' method='post'>
+						<fieldset class='form__fieldset form__fieldset--who'>
+							<div class='form__item'>
+								<label class='form__label' for='surname'>Фамилия:</label>
+								<input class='form__input' type='text' name='surname' id='surname' placeholder='Укажите фамилию'>
+							</div>
+							<div class='form__item'>
+								<label class='form__label' for='name'>Имя:</label>
+								<input class='form__input' type='text' name='name' id='name' placeholder='Введите ваше имя'>
+							</div>
+							<div class='form__item'>
+								<label class='form__label' for='middlename'>Отчество:</label>
+								<input class='form__input' type='text' name='middlename' id='middlename' placeholder='Ну и отчество тоже'>
+							</div>					
+						</fieldset>
+						<fieldset class='form__fieldset form__fieldset--achievements'>
+							<legend class='form__title form__title--achievements'>Ваши безбашенные достижения в путешествии</legend>
+							<div class='form__achievements-item'>
+								<input class='form__checkbox' type='checkbox' name='selfie' id='selfie' checked>
+								<label class='form__label' for='selfie'>Сделал селфи с акулой</label>
+							</div>
+							<div class='form__achievements-item'>
+								<input class='form__checkbox' type='checkbox' name='suntan' id='suntan' checked>
+								<label class='form__label' for='suntan'>Обгорел на пляже</label>
+							</div>
+							<div class='form__achievements-item'>
+								<input class='form__checkbox' type='checkbox' name='chuck' id='chuck'>
+								<label class='form__label' for='chuck'>Видел Чака Норриса</label>
+							</div>
+							<div class='form__achievements-item'>
+								<input class='form__checkbox' type='checkbox' name='souvenirs' id='souvenirs'>
+								<label class='form__label' for='souvenirs'>Накупил сувениров</label>
+							</div>
+							<div class='form__achievements-item'>
+								<input class='form__checkbox' type='checkbox' name='tower' id='tower' checked>
+								<label class='form__label' for='tower'>Удержал башню</label>
+							</div>
+							<div class='form__achievements-item'>
+								<input class='form__checkbox' type='checkbox' name='hotel' id='hotel'>
+								<label class='form__label' for='hotel'>Разгромил отель</label>
+							</div>
+						</fieldset>
+						<fieldset class='form__fieldset form__fieldset--contacts'>
+							<legend class='form__title form__title--contacts'>Контактная информация</legend>
+							<label class='form__label' for='id'>
+								Номер телефон<span class='form__span form__span--mobile'>a:</span><span class='form__span form__span--nomobile'>чика:</span>
+							</label>
+							<input class='form__input' type='tel' name='phone' id='phone' placeholder='Номер, пожалуйста'>
+							<label class='form__label' for='e-mail'>
+								Адрес<span class='form__span form__span--mobile'>ок</span>почты:
+							</label>
+							<input class='form__input' type='email' name='e-mail' id='e-mail' placeholder='E-mail, пожалуйста'>
+						</fieldset>
+						<fieldset class='form__fieldset form__fieldset--application'>
+							<legend class='form__title form__title--application'>С каким приложением путешествовали?</legend>
+							<div class='form__item'>
+								<input class='form__radio' type='radio' name='app' value='ios' id='ios' checked>
+								<label class='form__label' for='ios'>Pink для iOS</label>
+							</div>
+							<div class='form__item'>
+								<input class='form__radio' type='radio' name='app' value='andr' id='andr'>
+								<label class='form__label' for='andr'>Pink на Android</label>
+							</div>
+							<div class='form__item'>
+								<input class='form__radio' type='radio' name='app' value='win' id='win'>
+								<label class='form__label' for='win'>Windows Phone</label>
+							</div>
+						</fieldset>
+						<div class='form__emotions'>
+							<fieldset>
+								<legend class='form__title form__title--emotions'>Опишите свои эмоции</legend>
+								<textarea class='form__text' name='em-text' id='em-text'>Можно прям в красках, не стесняясь в выражениях
+								</textarea>
+							</fieldset>
+							<div class='form__send'>
+								<button class='btn btn--form' type='submit'>Отправить форму</button>
+								<div class='form__required-fields'>
+									<span class='form__star'>*</span>
+									<span class='form__required'>— Обязательные поля</span>
+								</div>
+							</div>
+						</div>
+					</form>
+				</section>
+			</div>
+		</main>
+		<footer class='page-footer'>
+			<div class='wrapper'>
+				<div class='logo logo--footer'>
+					<img src='img/logo-pink-footer.svg' alt='' width='147' height='40'>
+				</div>
+				<div class='social'>
+					<a class='social__link social__link--twitter social__link--circle' href='#'>twitter</a>
+					<a class='social__link social__link--facebook social__link--circle' href='#'>facebook</a>
+					<a class='social__link social__link--youtube social__link--circle' href='#'>youtube</a>
+				</div>
+				<div class='page-footer__copyright'>
+					<p>Разработано</p>
+					<a href='http://htmlacademy.ru'><img src='img/htmlacademy.svg' alt='htmlacademy' width='27' height='34'></a>
+				</div>
+			</div>
+		</footer>
+		<div class='popup popup--error'>
+			<div class='wrapper'>
+				<b class='popup__title'>Что-то пошло не так!</b>
+				<p class='popup__description'>
+					Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+				</p>
+				<button class='btn btn--form' type='button'>Ок</button>
+			</div>
+		</div>
+		<div class='popup popup--ok'>
+			<div class='wrapper'>
+				<b class='popup__title'>Ваша заявка отправлена</b>
+				<p class='popup__description'>
+					Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+					оповестим вас.
+				</p>
+				<button class='btn btn--form' type='button'>Закрыть окно</button>
+			</div>
+		</div>
+	</body>
 </html>
