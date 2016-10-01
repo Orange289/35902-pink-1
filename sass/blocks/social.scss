@@ -10,9 +10,9 @@
 	&--circle {
 		background: transparent;
 		@include size(52px);
-		border: 2px solid #e9ebec;
+		border: 3px solid #e9ebec;
 		border-radius: 50%;
-		margin-right: 7px;
+		margin-right: 10px;
 	}
 
 	&--twitter {
@@ -34,10 +34,9 @@
 	.social {
 		display: inline-block;
 		margin-top: 0;
-		// margin-right: 83px;
 		vertical-align: top;
 		margin: 0 auto;
-		margin-left: 77px;
+		margin-left: 70px;
 	}
 
 }

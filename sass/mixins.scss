@@ -55,7 +55,7 @@
 }
 
 @mixin toggle($id) {
-  ##{$id}:checked ~ .slider__controls .slider__toggle[for='#{$id}'] {
+		##{$id}:checked ~ .slider__controls .slider__toggle[for='#{$id}'] {
     background-color: #ffffff;
     border: 3px solid #283645;
     @include size(6px, 6px);
@@ -75,4 +75,5 @@
   @media ($desktop-widths) {
       width: 940px;
   }
+
 }

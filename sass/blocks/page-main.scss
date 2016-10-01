@@ -17,6 +17,10 @@
 
 }
 
+.page-main__title {
+	display: none;
+}
+
 .page-main__intro--inner {
 	background: none;
 	position: absolute;
@@ -55,35 +59,30 @@
 		width: 360px;
 		position: absolute;
 		top: -548px;
-		left: 40px;
+		left: 0;
 		background: none;
 		box-shadow: none;
 
 		p {
 			@include font-5(24px);
 			color: #ffffff;
-			padding-left: 0;
+			margin-left: 30px;
+			padding-right: 0;
 		}
 
-		span {
-			display: block;
-			@include font-param(40px, 50px, 400, #ffffff);
-			width: 180px;
-			text-align: center;
-			margin-left: 57px;
-		}
+	}
 
+	.page-main__intro .page-main__title {
+		display: block;
+		@include font-param(40px, 48px, 300, #ffffff);
+		width: 195px;
+		padding-top: 0;
+		margin-left: 98px;
 	}
 
 	.page-main__intro--inner {
 		top: -310px;
 		width: 500px;
-
-		h1 {
-			@include font-param(50px, 60px, 300, #ffffff);
-			width: 500px;
-		}
-
 	}
 
 }
@@ -92,22 +91,21 @@
 @media ($desktop-widths) {
 
 	.page-main__intro {
-		position: absolute;
-		top: -661px;
-		left: 120px;
+		top: -700px;
+		left: 170px;
 
 		p {
 			margin-top: 40px;
+			margin-left: 57px;
+			width: 302px;
 		}
 
-		span {
-			display: block;
-			@include font-param(50px, 60px, 400, #ffffff);
-			width: 240px;
-			text-align: center;
-			margin-left: 40px;
-		}
+	}
 
+	.page-main__intro .page-main__title {
+		@include font-param(50px, 60px, 400, #ffffff);
+		width: 240px;
+		text-align: center;
 	}
 
 }

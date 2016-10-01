@@ -1,18 +1,9 @@
 .logo {
 	display: inline-block;
 
-	&--header-mob {
+	&--header {
 		float: left;
-	  padding: 20px;
-	  @include size(75px, 22px);
-	}
-
-	&--header-tab {
-		display: none;
-	}
-
-	&--header-desktop {
-		display: none;
+	  // @include size(75px, 22px);
 	}
 
 	&--footer-desktop {
@@ -34,21 +25,14 @@
 
 	.logo {
 
-		&--header-mob {
-			display: none;
-		}
-
-		&--header-tab {
+		&--header {
 			display: inline-block;
+			vertical-align: top;
 			@include size(147px, 40px);
-			padding: 35px;
+			// padding: 35px;
 		}
 
-		&--footer-desktop {
-			display: none;
-		}
-
-		&--footer-tab {
+		&--footer {
 			@include size(147px, 40px);
 		}
 
@@ -73,19 +57,17 @@
 
 	.logo {
 
-		&--header-desktop {
+		&--header {
 			display: block;
 			float: left;
 			@include size(147px, 40px);
 			margin-top: 27px;
-			margin-left: 130px;
+			position: relative;
+			z-index: 2;
+			// margin-left: 130px;
 		}
 
-		&--footer-tab {
-			display: none;
-		}
-
-		&--footer-desktop {
+		&--footer {
 			display: inline-block;
 			@include size(147px, 40px);
 		}

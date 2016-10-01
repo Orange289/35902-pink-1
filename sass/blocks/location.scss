@@ -4,7 +4,7 @@
 	    @include font-param(18px, auto, 600);
 	    display: block;
 	  }
-		
+
 		p {
 			@include font-2;
 			color: #d22856;
@@ -13,28 +13,25 @@
 }
 
 .location__map {
-	position: relative;
 	margin: 0 auto;
 	line-height: 0;
-	@include size(320px, 645px);
-	background-image: url('../img/bg-map-mobile.png');
-	margin-top: -31px;
-	z-index: 1;
+	@include size(100%, 201px);
+	background-image: url('../img/bg-map-mobile@1x.png');
 }
 
 .location__contacts {
-	position: absolute;
-	z-index: 3;
-	top: 31px;
+	// position: absolute;
+	// top: 21px;
 	width: 100%;
 	// margin-bottom: 300px;
 	background-color: #ffffff;
 }
 
-.location__promo {
+.location .location__promo {
 	@include font-2;
 	padding-left: 15px;
 	padding-right: 15px;
+	padding-top: 17px;
 }
 
 .location__item {
@@ -50,31 +47,30 @@
 }
 
 @media ($tablet-widths) {
-	
+
 	.location {
-		
+
 		b {
 			padding-bottom: 2px;
 		}
-		
+
 	}
 
 	.location__map {
-		@include size(700px, 848px);
-		background: url('../img/bg-map-tablet.jpg') 0 125px no-repeat;
+		@include size(100%, 380px);
+		background-image: url('../img/bg-map-tablet@1x.jpg');
 	}
 
 	.location__contacts {
 		padding-bottom: 17px;
-		top: -54px;
 	}
 
-	.location__promo {
+	.location .location__promo {
 		width: 370px;
 		margin: 0 auto;
 		@include font-param(40px, 50px, 300);
 		padding-top: 45px;
-		padding-bottom: 47px;
+		padding-bottom: 20px;
 	}
 
 	.location__item {
@@ -101,23 +97,23 @@
 
 
 @media ($desktop-widths) {
-	
+
 	.location {
-		
+
 		b {
 			padding-bottom: 17px;
 		}
-		
+
 	}
 
 	.location__map {
-		@include size(1200px, 976px);
-    background-image: url('../img/bg-map-desktop.jpg');
+		@include size(100%, 504px);
+    background-image: url('../img/bg-map-desktop@1x.jpg');
 	}
 
 	.location__contacts {
 		padding-bottom: 48px;
-		top: -37px;
+		// top: -37px;
 	}
 
 	.location__promo {

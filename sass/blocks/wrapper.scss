@@ -2,12 +2,24 @@
   background-color: transparent;
 	@include container();
 	@include clearfix();
-  // width: 100%;
-  // box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+	position: relative;
 }
 
-// @media ($desktop-widths) {
-//   .wrapper {
-//     width: 1200px;
-//   }
-// }
+
+@media ($tablet-widths) {
+
+	.wrapper--header {
+		width: 100%;
+	}
+
+}
+
+@media ($desktop-widths) {
+
+	.wrapper--header {
+		@include container();
+		position: static;
+		// background: red;
+	}
+
+}

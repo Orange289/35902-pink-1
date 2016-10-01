@@ -21,7 +21,7 @@ gulp.task("style", function() {
 			]})
 		]))
 		.pipe(gulp.dest("css"))
-		.pipe(server.reload({strea>>m: true}));
+		.pipe(server.reload({stream: true}));
 });
 
 gulp.task("serve", ["style"], function() {

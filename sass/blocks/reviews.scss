@@ -15,11 +15,6 @@
 
 }
 
-.reviews__wrapper {
-	@include container();
-	position: relative;
-}
-
 .reviews__prev {
   display: none;
 }
