@@ -151,7 +151,6 @@
 @media ($desktop-widths) {
 
   .advantages {
-    width: 1200px;
 
     h2 {
       @include font-param(30px, 30px, 600, #000000);
@@ -166,8 +165,8 @@
     padding-top: 70px;
 
     p:nth-child(2) {
-      padding-left: 320px;
-      padding-right: 320px;
+      width: 410px;
+      margin: 0 auto;
     }
 
   }
@@ -223,6 +222,7 @@
     display: block;
     top: -90px;
     left: 140px;
+    left: 290px;
     background-image: url('../img/iphone-screen-desktop-mono@1x.png');
   }
 
@@ -240,6 +240,7 @@
     display: block;
     top: -90px;
     left: 457px;
+    left: 610px;
     background-image: url('../img/iphone-screen-desktop@1x.png');
   }
 
@@ -257,6 +258,7 @@
     position: absolute;
     top: -90px;
     left: 778px;
+    left: 921px;
     @include size(294px, 382px);
     background-image: url('../img/iphone-screen-desktop-smile@1x.png');
     z-index: 2;
