@@ -37,7 +37,7 @@
 	@include font-white-bold(30px);
 	padding-top: 14px;
 	background-color: #283645;
-	border-right: 3px solid #e5e5e5;
+	border-right: 2px solid #e5e5e5;
 	display: none;
 
 	&--empty {
@@ -73,7 +73,7 @@
 .prices__option {
 
 	&--filter .prices__caption {
-		border-top: 3px solid #e5e5e5;
+		border-top: 2px solid #e5e5e5;
 	}
 
 }
@@ -82,7 +82,7 @@
 	font-size: 14px;
   background-color: #ffffff;
   text-align: left;
-  border-bottom: 3px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
 	text-transform: uppercase;
 	padding-bottom: 14px;
 	padding-top: 14px;
@@ -151,8 +151,8 @@
 	background-color: transparent;
 	height: 263px;
 	width: 85%;
-	border-left: 3px solid #e5e5e5;
-	border-right: 3px solid #e5e5e5;
+	border-left: 2px solid #e5e5e5;
+	border-right: 2px solid #e5e5e5;
 }
 
 
@@ -173,7 +173,7 @@
 
 	.prices__option .prices__caption {
 		display: table-cell;
-		border-left: 3px solid #e5e5e5;
+		border-left: 2px solid #e5e5e5;
 		padding-left: 16px;
 		padding-right: 25px;
 	}
@@ -183,7 +183,7 @@
 	}
 
 	.prices__option li {
-		border-right: 3px solid #e5e5e5;
+		border-right: 2px solid #e5e5e5;
 		padding-bottom: 6px;
 		padding-top: 6px;
 		text-transform: none;

@@ -1,6 +1,8 @@
 .page-main__intro {
-	background-color: #1d2631;
-	padding-top: 29px;
+	// background-color: #1d2631;
+	// padding-top: 29px;
+	background: url('../img/iphone-hand-mobile@1x.png') 0% 49% no-repeat,  url('../img/bg-back-mobile@1x.jpg') 50% 0% no-repeat;
+	padding-top: 461px;
 
 	p {
 		@include font-1;
@@ -9,10 +11,6 @@
 		padding-right: 45px;
 		padding-bottom: 28px;
 		margin: 0;
-	}
-
-	span {
-		display: none;
 	}
 
 }
@@ -52,22 +50,21 @@
 @media ($tablet-widths){
 
   .page-main {
-    position: relative;
+    // position: relative;
   }
 
 	.page-main__intro {
-		width: 360px;
-		position: absolute;
-		top: -548px;
-		left: 0;
-		background: none;
-		box-shadow: none;
+		background: url('../img/iphone-hand-tablet@1x.png') 50% 100% no-repeat,  url('../img/bg-back-tablet@1x.jpg') 50% 100% no-repeat;
+		padding-top: 210px;
+		padding-bottom: 108px;
 
 		p {
 			@include font-5(24px);
 			color: #ffffff;
-			margin-left: 30px;
+			padding-left: 30px;
 			padding-right: 0;
+			padding-bottom: 0;
+			width: 310px;
 		}
 
 	}
@@ -76,8 +73,7 @@
 		display: block;
 		@include font-param(40px, 48px, 300, #ffffff);
 		width: 195px;
-		padding-top: 0;
-		margin-left: 98px;
+		padding-left: 96px;
 	}
 
 	.page-main__intro--inner {
@@ -91,12 +87,15 @@
 @media ($desktop-widths) {
 
 	.page-main__intro {
-		top: -700px;
-		left: 170px;
+		background: url('../img/iphone-hand-desktop@1x.png') 60% 100% no-repeat,  url('../img/bg-back-desktop@1x.jpg') 50% 100% no-repeat;
+		padding-top: 228px;
+
+		// top: -700px;
+		// left: 170px;
 
 		p {
-			margin-top: 40px;
-			margin-left: 57px;
+			padding-top: 40px;
+			padding-left: 11%;
 			width: 302px;
 		}
 
@@ -106,6 +105,8 @@
 		@include font-param(50px, 60px, 400, #ffffff);
 		width: 240px;
 		text-align: center;
+		padding-top: 0;
+		padding-left: 14%;
 	}
 
 }

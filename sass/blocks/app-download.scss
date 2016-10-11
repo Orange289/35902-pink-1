@@ -1,5 +1,6 @@
 .app-download {
-
+	background-color: #1d2631;
+	padding-top: 30px;
 }
 
 .app-download__platforms {
@@ -30,8 +31,12 @@
 
 @media ($tablet-widths) {
 
+	.app-download {
+		display: absolute;
+		background: transparent;
+	}
+
 	.app-download__platforms {
-		background-color: green;
 		width: 214px;
 		margin-left: 86px;
 	}
