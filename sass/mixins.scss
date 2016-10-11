@@ -38,7 +38,7 @@
   @include font-param(14px, $l, 400, #ffffff);
 }
 
-@mixin font-2($l: auto){
+@mixin font-2($l: 26px){
   @include font-param(24px, $l, 300);
 }
 

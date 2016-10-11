@@ -3,7 +3,7 @@
 
 	&--header {
 		float: left;
-	  // @include size(75px, 22px);
+		padding-left: 20px;
 	}
 
 	&--footer-desktop {
@@ -26,10 +26,7 @@
 	.logo {
 
 		&--header {
-			display: inline-block;
-			vertical-align: top;
-			@include size(147px, 40px);
-			// padding: 35px;
+			padding-left: 38px;
 		}
 
 		&--footer {
@@ -58,13 +55,9 @@
 	.logo {
 
 		&--header {
-			display: block;
-			float: left;
-			@include size(147px, 40px);
-			margin-top: 27px;
+			padding-left: 0;
 			position: relative;
 			z-index: 2;
-			// margin-left: 130px;
 		}
 
 		&--footer {
