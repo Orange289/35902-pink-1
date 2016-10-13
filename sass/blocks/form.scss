@@ -1,3 +1,72 @@
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.form__fieldset {
+	border: none;
+
+	&--who {
+		padding-bottom: 41px;
+	}
+
+	&--achievements {
+		background-color: #f2f2f2;
+		width: 100%;
+		padding-top: 40px;
+	}
+
+	&--contacts {
+		padding-bottom: 54px;
+	}
+
+	&--application {
+		background-color: #f2f2f2;
+		width: 100%;
+		padding-top: 38px;
+	}
+
+}
+
+.form__emotions {
+	padding-top: 60px;
+
+	fieldset {
+		border: none;
+	}
+
+}
+
+.form__div {
+
+	&--application,
+	&--achievements {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+
+.form__item {
+	width: 280px;
+}
+
+.form-content__title {
+	text-align: center;
+	margin: auto;
+	font-size: 14px;
+	padding-top: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	span {
+		display: none;
+	}
+
+}
+
 .form__input {
 	@include font-name;
 	color: #283645;
@@ -5,7 +74,6 @@
 	padding-left: 21px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	width: 100%;
 	outline: none;
 	border: none;
 	border: 2px solid #e5e5e5;
@@ -14,87 +82,127 @@
 .form__label {
 	font-size: 14px;
 	color: #d22856;
-	// display: block;
 	text-transform: uppercase;
-	margin-bottom: 4px;
+	display: block;
+	margin-top: 20px;
 	margin-bottom: 17px;
-	width: 255px;
+	margin-left: 23px;
+
+	&--achievements {
+		display: inline-block;
+		@include font-param(18px, 30px, 400);
+		text-transform: none;
+	}
+
+	&--application {
+		display: inline-block;
+		@include font-param(18px, 30px, 400);
+		text-transform: none;
+	}
+
 }
 
-.form__achievements {
-	background-color: #f2f2f2;
-	width: 100%;
-	border: none;
-	padding-top: 33px;
-}
-
-.form__title--achievements {
+.form__title {
 	@include font-4(18px);
 	color: #d22856;
 	text-align: center;
 	text-transform: uppercase;
-	padding-left: 20px;
-	padding-right: 20px;
+
+	&--achievements {
+		width: 220px;
+	}
+
+	&--application {
+		width: 180px;
+	}
+
+	&--emotions {
+		padding-bottom: 20px;
+	}
+
 }
 
 .form__title--contacts {
 	display: none;
 }
 
+.form__checkbox {
+	// margin-left: 5px;
+	// margin-bottom: 62px;
+	// margin-right: 48px;
+}
+
+.form__achievements-item:last-child .form__checkbox {
+	margin-bottom: 0;
+}
+
+.form__span {
+
+	&--nomobile {
+		display: none;
+	}
+
+}
+
+.form__text {
+	@include font-name;
+	@include font-5;
+	width: 254px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-top: 13px;
+	border: 2px solid #e5e5e5;
+}
+
+
+
 
 @media ($tablet-widths) {
-	
+
+	.form-content__title {
+		@include font-5;
+		padding-top: 94px;
+		padding-left: 60px;
+		padding-right: 60px;
+
+		span {
+			display: block;
+		}
+
+	}
+
 	.form__input {
 		@include font-5;
-    width: auto;
     margin-left: 20px;
-    flex-grow: 1;
+		display: inline-block;
 	}
-	
+
 	.form__label {
 		@include font-5;
 		color: #d22856;
 		margin-bottom: 52px;
-		vertical-align: top;
-		display: flex;
-		align-items: baseline;
-		width: 100%;
+		margin: 0;
+		display: inline-block;
 	}
-	
-	.form__achievements {
-		background-color: #ffffff;
-		margin-top: -40px;
-		order: 3;
-		display: flex;
-		flex-wrap: wrap;
-		border: 2px solid #e5e5e5;
-		padding-top: 40px;
-		padding-bottom: 60px;
-	}
-	
+
 	.form__title--achievements {
 		line-height: 30px;
 		padding-left: 35px;
 		padding-right: 35px;
 	}
-	
+
 	.form__title--contacts {
 		display: block;
 		padding-left: 35px;
     padding-right: 35px;
 	}
-	
+
 }
 
 
 @media ($desktop-widths) {
 
-	.form__achievements {
-		flex-direction: column;
-		padding-left: 60px;
-		padding-right: 60px;
-		padding-bottom: 44px;
-	}
 
-	
+
+
 }

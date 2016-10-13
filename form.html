@@ -9,15 +9,15 @@
 	</head>
 	<body class='page-body'>
 		<header class='page-header'>
-			<div class='wrapper'>
+			<div class='wrapper wrapper--header'>
+				<a class='logo logo--header' href='index.html'>
+					<img src='img/logo-pink-white-mobile.svg' alt='logo'>
+				</a>
 				<nav class='main-nav main-nav--nojs'>
-					<div class='logo logo--header'>
-						<a href='index.html'><img src='img/logo-pink-white-desktop.png' alt='logo'></a>
-					</div>
-					<button class='page-header__btn page-header__btn--open'>
+					<button class='page-header__btn page-header__btn--open' type='button' title='открыть'><img src='img/icon-menu-burger.svg' alt='open'></button>
 					<ul class='main-nav__list'>
-						<li class='main-nav__item'><a href='index.html'>Главная</a></li>
-						<li class='main-nav__item main-nav__item--active'><a href='photo.html'>Фотографии</a></li>
+						<li class='main-nav__item main-nav__item--active'><a href='index.html'>Главная</a></li>
+						<li class='main-nav__item'><a href='photo.html'>Фотографии</a></li>
 						<li class='main-nav__item'><a>Конкурс</a></li>
 						<li class='main-nav__item'><a href='https://htmlacademy.ru/'>Html Academy</a></li>
 					</ul>
@@ -30,73 +30,85 @@
 			</div>
 			<div class='wrapper'>
 				<section class='form-content'>
-					<p class='form-content__title'>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+					<p class='form-content__title'>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
 					<form class='form' action='#' method='post'>
 						<fieldset class='form__fieldset form__fieldset--who'>
-							<div class='form__item'>
-								<label class='form__label' for='surname'>Фамилия:</label>
-								<input class='form__input' type='text' name='surname' id='surname' placeholder='Укажите фамилию'>
-							</div>
-							<div class='form__item'>
-								<label class='form__label' for='name'>Имя:</label>
-								<input class='form__input' type='text' name='name' id='name' placeholder='Введите ваше имя'>
-							</div>
-							<div class='form__item'>
-								<label class='form__label' for='middlename'>Отчество:</label>
-								<input class='form__input' type='text' name='middlename' id='middlename' placeholder='Ну и отчество тоже'>
+							<div class='form__div form__div--who'>
+								<div class='form__item'>
+									<label class='form__label' for='surname'>Фамилия:</label>
+									<input class='form__input' type='text' name='surname' id='surname' placeholder='Укажите фамилию'>
+								</div>
+								<div class='form__item'>
+									<label class='form__label' for='name'>Имя:</label>
+									<input class='form__input' type='text' name='name' id='name' placeholder='Введите ваше имя'>
+								</div>
+								<div class='form__item'>
+									<label class='form__label' for='middlename'>Отчество:</label>
+									<input class='form__input' type='text' name='middlename' id='middlename' placeholder='Ну и отчество тоже'>
+								</div>
 							</div>
 						</fieldset>
 						<fieldset class='form__fieldset form__fieldset--achievements'>
-							<legend class='form__title form__title--achievements'>Ваши безбашенные достижения в путешествии</legend>
-							<div class='form__achievements-item'>
-								<input class='form__checkbox' type='checkbox' name='selfie' id='selfie' checked>
-								<label class='form__label' for='selfie'>Сделал селфи с акулой</label>
-							</div>
-							<div class='form__achievements-item'>
-								<input class='form__checkbox' type='checkbox' name='suntan' id='suntan' checked>
-								<label class='form__label' for='suntan'>Обгорел на пляже</label>
-							</div>
-							<div class='form__achievements-item'>
-								<input class='form__checkbox' type='checkbox' name='chuck' id='chuck'>
-								<label class='form__label' for='chuck'>Видел Чака Норриса</label>
-							</div>
-							<div class='form__achievements-item'>
-								<input class='form__checkbox' type='checkbox' name='souvenirs' id='souvenirs'>
-								<label class='form__label' for='souvenirs'>Накупил сувениров</label>
-							</div>
-							<div class='form__achievements-item'>
-								<input class='form__checkbox' type='checkbox' name='tower' id='tower' checked>
-								<label class='form__label' for='tower'>Удержал башню</label>
-							</div>
-							<div class='form__achievements-item'>
-								<input class='form__checkbox' type='checkbox' name='hotel' id='hotel'>
-								<label class='form__label' for='hotel'>Разгромил отель</label>
+							<div class='form__div form__div--achievements'>
+								<legend class='form__title form__title--achievements'>Ваши безбашенные достижения в путешествии</legend>
+								<div class='form__achievements-item'>
+									<input class='form__checkbox' type='checkbox' name='selfie' id='selfie' checked>
+									<label class='form__label form__label--achievements' for='selfie'>Сделал селфи с акулой</label>
+								</div>
+								<div class='form__achievements-item'>
+									<input class='form__checkbox' type='checkbox' name='suntan' id='suntan' checked>
+									<label class='form__label form__label--achievements' for='suntan'>Обгорел на пляже</label>
+								</div>
+								<div class='form__achievements-item'>
+									<input class='form__checkbox' type='checkbox' name='chuck' id='chuck'>
+									<label class='form__label form__label--achievements' for='chuck'>Видел Чака Норриса</label>
+								</div>
+								<div class='form__achievements-item'>
+									<input class='form__checkbox' type='checkbox' name='souvenirs' id='souvenirs'>
+									<label class='form__label form__label--achievements' for='souvenirs'>Накупил сувениров</label>
+								</div>
+								<div class='form__achievements-item'>
+									<input class='form__checkbox' type='checkbox' name='tower' id='tower' checked>
+									<label class='form__label form__label--achievements' for='tower'>Удержал башню</label>
+								</div>
+								<div class='form__achievements-item'>
+									<input class='form__checkbox' type='checkbox' name='hotel' id='hotel'>
+									<label class='form__label form__label--achievements' for='hotel'>Разгромил отель</label>
+								</div>
 							</div>
 						</fieldset>
 						<fieldset class='form__fieldset form__fieldset--contacts'>
-							<legend class='form__title form__title--contacts'>Контактная информация</legend>
-							<label class='form__label' for='id'>
-								Номер телефон<span class='form__span form__span--mobile'>a:</span><span class='form__span form__span--nomobile'>чика:</span>
-							</label>
-							<input class='form__input' type='tel' name='phone' id='phone' placeholder='Номер, пожалуйста'>
-							<label class='form__label' for='e-mail'>
-								Адрес<span class='form__span form__span--mobile'>ок</span>почты:
-							</label>
-							<input class='form__input' type='email' name='e-mail' id='e-mail' placeholder='E-mail, пожалуйста'>
+							<div class='form__div form__div--contacts'>
+								<legend class='form__title form__title--contacts'>Контактная информация</legend>
+								<div class='form__item'>
+									<label class='form__label' for='id'>
+										Номер телефон<span class='form__span form__span--mobile'>a:</span><span class='form__span form__span--nomobile'>чика:</span>
+									</label>
+									<input class='form__input' type='tel' name='phone' id='phone' placeholder='Номер, пожалуйста'>
+								</div>
+								<div class='form__item'>
+									<label class='form__label' for='e-mail'>
+										Адрес<span class='form__span form__span--mobile'>ок</span> почты:
+									</label>
+									<input class='form__input' type='email' name='e-mail' id='e-mail' placeholder='E-mail, пожалуйста'>
+								</div>
+							</div>
 						</fieldset>
 						<fieldset class='form__fieldset form__fieldset--application'>
-							<legend class='form__title form__title--application'>С каким приложением путешествовали?</legend>
-							<div class='form__item'>
-								<input class='form__radio' type='radio' name='app' value='ios' id='ios' checked>
-								<label class='form__label' for='ios'>Pink для iOS</label>
-							</div>
-							<div class='form__item'>
-								<input class='form__radio' type='radio' name='app' value='andr' id='andr'>
-								<label class='form__label' for='andr'>Pink на Android</label>
-							</div>
-							<div class='form__item'>
-								<input class='form__radio' type='radio' name='app' value='win' id='win'>
-								<label class='form__label' for='win'>Windows Phone</label>
+							<div class='form__div form__div--application'>
+								<legend class='form__title form__title--application'>С каким приложением путешествовали?</legend>
+								<div class='form__item'>
+									<input class='form__radio' type='radio' name='app' value='ios' id='ios' checked>
+									<label class='form__label form__label--application' for='ios'>Pink для iOS</label>
+								</div>
+								<div class='form__item'>
+									<input class='form__radio' type='radio' name='app' value='andr' id='andr'>
+									<label class='form__label form__label--application' for='andr'>Pink на Android</label>
+								</div>
+								<div class='form__item'>
+									<input class='form__radio' type='radio' name='app' value='win' id='win'>
+									<label class='form__label form__label--application' for='win'>Windows Phone</label>
+								</div>
 							</div>
 						</fieldset>
 						<div class='form__emotions'>
@@ -120,7 +132,7 @@
 		<footer class='page-footer'>
 			<div class='wrapper'>
 				<div class='logo logo--footer'>
-					<img src='img/logo-pink-footer.svg' alt='' width='147' height='40'>
+					<img src='img/logo-pink-footer.svg' alt='logo'>
 				</div>
 				<div class='social'>
 					<a class='social__link social__link--twitter social__link--circle' href='#'>twitter</a>
@@ -129,7 +141,7 @@
 				</div>
 				<div class='page-footer__copyright'>
 					<p>Разработано</p>
-					<a href='http://htmlacademy.ru'><img src='img/htmlacademy.svg' alt='htmlacademy' width='27' height='34'></a>
+					<a href='http://htmlacademy.ru'><img src='img/logo-htmlacademy.svg' alt='htmlacademy'></a>
 				</div>
 			</div>
 		</footer>

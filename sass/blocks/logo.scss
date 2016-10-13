@@ -6,8 +6,8 @@
 		padding-left: 20px;
 	}
 
-	&--footer-desktop {
-		display: none;
+	&--footer {
+		@include size(147px, 40px);
 	}
 
 }
@@ -27,10 +27,6 @@
 
 		&--header {
 			padding-left: 38px;
-		}
-
-		&--footer {
-			@include size(147px, 40px);
 		}
 
 	}
