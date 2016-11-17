@@ -1,7 +1,6 @@
 .main-nav {
 	@include clearfix();
   text-transform: uppercase;
-	// background-color: #283645;
 	font-size: 0;
 	position: relative;
 
@@ -16,8 +15,9 @@
 
 .main-nav__list {
   list-style: none;
-  padding: 0;
 	display: none;
+	padding: 0;
+	background-color: #283645;
 }
 
 .main-nav__list-show {
@@ -31,11 +31,21 @@
   border-bottom: 1px solid #000000;
 }
 
+.main-nav__item:hover {
+	a {
+		color: #d22856;
+	}
+}
+
+.main-nav__item:active {
+	a {
+		color: rgba(210, 40, 86, 0.3);
+	}
+}
+
 
 @media ($tablet-widths) {
-	.main-nav {
-		width: auto;
-	}
+
 }
 
 @media ($desktop-widths) {
@@ -52,8 +62,8 @@
     margin: 0;
 
     a {
-      padding-top: 0;
-      padding-bottom: 0;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
 
   }
@@ -62,6 +72,7 @@
 		display: block;
 		margin-top: 0;
 		margin-left: 320px;
+		background-color: transparent;
     @include clearfix();
   }
 
@@ -69,10 +80,21 @@
     border: none;
     float: left;
     margin-left: 80px;
+
+		&--active {
+			border-bottom: 2px solid #ffffff;
+		}
+
   }
 
 	.main-nav__item:first-of-type {
 		margin-left: 0;
+	}
+
+	.main-nav__item:active {
+		a {
+			color: rgba(256, 256, 256, 0.3);
+		}
 	}
 
 }

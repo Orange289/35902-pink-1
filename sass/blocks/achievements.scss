@@ -27,7 +27,6 @@
 	text-transform: uppercase;
 	padding-left: 20px;
 	padding-right: 20px;
-  // padding-bottom: 40px;
 }
 
 .achievements__label {
@@ -96,12 +95,10 @@
 		line-height: 30px;
 		padding-left: 35px;
 		padding-right: 35px;
-    // padding: 0;
 	}
 
 	.achievements__label {
 		@include font-5;
-    // padding-top: 50px;
 	}
 
 }
@@ -116,13 +113,11 @@
 			padding-left: 60px;
 			padding-right: 60px;
 			padding-bottom: 44px;
-      // align-items: ;
 		}
 
 	}
 
 	.achievements__label {
-    // display: inline;
 		width: 260px;
 	}
 

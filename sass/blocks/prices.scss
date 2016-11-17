@@ -59,6 +59,20 @@
 
 }
 
+.prices__yes {
+	float: right;
+	margin-right: 13%;
+	@include size(31px, 21px);
+	background: url('../img/yes.png') no-repeat;
+}
+
+.prices__no {
+	float: right;
+	margin-right: 13%;
+	@include size(27px, 26px);
+	background: url('../img/no.png') no-repeat;
+}
+
 .prices__amount {
   @include font-2(30px);
   color: #ffffff;
@@ -87,7 +101,6 @@
 	padding-bottom: 14px;
 	padding-top: 14px;
 	padding-left: 23px;
-	width: 132px;
 }
 
 .prices__option .prices__caption {
@@ -97,6 +110,8 @@
 .prices__option .prices__marker {
 	display: none;
 	padding-left: 14%;
+	@include clearfix();
+	// position: relative;
 }
 
 .prices__controls {
@@ -212,6 +227,18 @@
 		display: none;
 	}
 
+	.prices__no {
+		float: none;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	.prices__yes {
+		float: none;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
 }
 
 
@@ -241,7 +268,7 @@
 	}
 
 	.prices__hit {
-		left: 458px;
+		left: 450px;
 	}
 
 }

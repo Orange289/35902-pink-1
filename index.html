@@ -2,22 +2,25 @@
 <html lang='ru'>
 	<head>
 		<meta charset='utf-8'>
-		<link rel='stylesheet' href='sass/normalize.scss'>
 		<link rel='stylesheet' href='css/style.css'>
-		<title>HTML Academy: Пинк</title>
+		<title>Пинк</title>
 		<meta name='viewport' content='width=device-width,initial-scale=1'>
 	</head>
 	<body class='page-body'>
 		<header class='page-header'>
 			<div class='wrapper wrapper--header'>
 				<div class='logo logo--header'>
-					<img src='img/logo-pink-white-mobile.svg' alt='logo'>
+					<picture>
+						<source media='(min-width: 1200px)' srcset='img/logotype-white-desktop.png'>
+						<source media='(min-width: 700px)' srcset='img/logotype-white-tablet.png'>
+						<img src='img/logo-pink-white-mobile.svg' alt='logo'>
+					</picture>
 				</div>
-				<nav class='main-nav main-nav--nojs'>
-					<button class='page-header__btn page-header__btn--open' type='button' title='открыть'><img src='img/icon-menu-burger.svg' alt='open'></button>
+				<nav class='main-nav'>
+					<button class='page-header__btn page-header__btn--open' type='button' title='открыть'></button>
 					<ul class='main-nav__list'>
 						<li class='main-nav__item main-nav__item--active'><a>Главная</a></li>
-						<li class='main-nav__item'><a href='photo.html'>Фотографии</a></li>
+						<li class='main-nav__item'><a href='#'>Фотографии</a></li>
 						<li class='main-nav__item'><a href='form.html'>Конкурс</a></li>
 						<li class='main-nav__item'><a href='https://htmlacademy.ru/'>Html Academy</a></li>
 					</ul>
@@ -152,14 +155,14 @@
 							</ul>
 							<ul class='prices__option prices__option--smiles'>
 								<li class='prices__caption'>Смайлики</li>
-								<li class='prices__marker prices__marker--b'><span class='prices__text prices__text--b'>Смайлики</span><span class='prices__yes'></span></li>
+								<li class='prices__marker prices__marker--b'><span class='prices__text prices__text--b'>Смайлики</span><span class='prices__no'></span></li>
 								<li class='prices__marker prices__marker--st'><span class='prices__text prices__text--st'>Смайлики</span><span class='prices__yes'></span></li>
 								<li class='prices__marker prices__marker--un'><span class='prices__text prices__text--un'>Смайлики</span><span class='prices__yes'></span></li>
 							</ul>
 							<ul class='prices__option prices__option--comments'>
 								<li class='prices__caption'>Комментарии</li>
-								<li class='prices__marker prices__marker--b'><span class='prices__text prices__text--b'>Комментарии</span><span class='prices__yes'></span></li>
-								<li class='prices__marker prices__marker--st'><span class='prices__text prices__text--st'>Комментарии</span><span class='prices__yes'></span></li>
+								<li class='prices__marker prices__marker--b'><span class='prices__text prices__text--b'>Комментарии</span><span class='prices__no'></span></li>
+								<li class='prices__marker prices__marker--st'><span class='prices__text prices__text--st'>Комментарии</span><span class='prices__no'></span></li>
 								<li class='prices__marker prices__marker--un'><span class='prices__text prices__text--un'>Комментарии</span><span class='prices__yes'></span></li>
 							</ul>
 						</div>
@@ -201,7 +204,10 @@
 			<div class='footer-bottom'>
 				<div class='wrapper'>
 					<div class='logo logo--footer'>
-						<img src='img/logo-pink-footer.svg' alt='logo' width='147' height='40'>
+						<picture>
+							<source media='(min-width: 1200px)' srcset='img/logotype-blue-desktop.png'>
+							<img src='img/logotype-blue-tablet.png' alt='logo'>
+						</picture>
 					</div>
 					<div class='social'>
 						<a class='social__link social__link--twitter social__link--circle' href='#'>twitter</a>
@@ -209,7 +215,7 @@
 						<a class='social__link social__link--youtube social__link--circle' href='#'>youtube</a>
 					</div>
 					<div class='page-footer__copyright'>
-						<p>Разработано</p>
+						<p>Дизайн</p>
 						<a href='http://htmlacademy.ru'><img src='img/logo-htmlacademy.svg' alt='htmlacademy' width='27' height='34'></a>
 					</div>
 				</div>

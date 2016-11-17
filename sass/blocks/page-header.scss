@@ -3,37 +3,62 @@
 	line-height: 0;
 	top: 0;
 	left: 0;
+	height: 66px;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
-	padding-top: 20px;
-	padding-bottom: 20px;
+
+	&--open {
+		position: static;
+		background-color: #283645;
+		padding-top: 70px;
+		padding-bottom: 0;
+	}
+
 }
 
 .page-header__btn {
 	position: absolute;
-	top: 0;
+	top: 20px;
 	right: 20px;
 	text-decoration: none;
 	border: none;
 	outline: none;
 	background: none;
 	cursor: pointer;
-}
 
-.page-header__menu-open {
-	position: static;
+	&--open {
+		@include size(50px, 24px);
+		background-image: url('../img/icon-menu-burger.svg');
+	}
+
+	&--close {
+		top: -50px;
+		@include size(24px, 23px);
+		background-image: url('../img/icon-menu-cross.svg');
+	}
+
 }
 
 
 @media ($tablet-widths) {
 
   .page-header {
-		padding-top: 38px;
-		padding-bottom: 38px;
+		height: 112px;
+
+		&--open {
+			padding-top: 109px;
+		}
+
   }
 
 	.page-header__btn {
 		right: 38px;
+		top: 40px;
+
+		&--close {
+			top: -60px;
+		}
+
 	}
 
 }
@@ -43,6 +68,9 @@
 
   .page-header {
     width: 100%;
+		// height: 110px;
+		// padding-top: 40px;
+		// padding-bottom: 40px;
 		background-color: rgba(0, 0, 0, 0.3);
 
   }

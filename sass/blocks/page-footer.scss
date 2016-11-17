@@ -36,10 +36,15 @@
 
 @media ($tablet-widths) {
 
+	.page-footer {
+		padding-bottom: 38px;
+	}
+
 	.page-footer__copyright {
 		display: inline-block;
 		margin-top: 0;
-		margin-left: 78px;
+		margin-left: 76px;
+		padding-top: 50px;
 	}
 
 }
@@ -47,9 +52,14 @@
 
 @media ($desktop-widths) {
 
+	.page-footer {
+		padding-bottom: 72px;
+	}
+
 	.page-footer__copyright {
 		@include font-5(18px);
 		margin-left: -10px;
+		padding-top: 92px;
 	}
 
 }

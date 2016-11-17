@@ -18,8 +18,8 @@
 }
 
 .page-main__intro--inner {
-	background: url('../img/bg-back-mobile@1x.jpg') 50% 0% no-repeat;
-	padding-top: 102px;
+	background: url('../img/bg-back-mobile@1x.jpg') 50% 5% no-repeat;
+	padding-top: 194px;
 	padding-bottom: 60px;
 
 	h1 {
@@ -33,18 +33,6 @@
 
 }
 
-// .page-main--form {
-//	 display: flex;
-//	 flex-wrap: wrap;
-//	 justify-content: center;
-// }
-//
-// .page-main--photo {
-// 	display: flex;
-// 	flex-wrap: wrap;
-// 	justify-content: center;
-// }
-
 
 @media ($tablet-widths){
 
@@ -54,7 +42,7 @@
 
 	.page-main__intro {
 		background: url('../img/iphone-hand-tablet@1x.png') 50% 100% no-repeat,	url('../img/bg-back-tablet@1x.jpg') 50% 100% no-repeat;
-		padding-top: 210px;
+		padding-top: 230px;
 		padding-bottom: 108px;
 
 		p {

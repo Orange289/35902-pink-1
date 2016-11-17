@@ -2,11 +2,17 @@
 	display: inline-block;
 
 	&--header {
-		float: left;
-		padding-left: 20px;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+	}
+
+	&--header-open {
+		top: -50px;
 	}
 
 	&--footer {
+		padding-top: 56px;
 		@include size(147px, 40px);
 	}
 
@@ -26,7 +32,16 @@
 	.logo {
 
 		&--header {
-			padding-left: 38px;
+			left: 38px;
+			top: 28px;
+		}
+
+		&--header-open {
+			top: -80px;
+		}
+
+		&--footer {
+			padding-top: 37px;
 		}
 
 	}
@@ -58,6 +73,7 @@
 
 		&--footer {
 			display: inline-block;
+			padding-top: 70px;
 			@include size(147px, 40px);
 		}
 
