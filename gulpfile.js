@@ -5,7 +5,8 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create(); 
+var server = require("browser-sync").create();
+var ghPages = require('gulp-gh-pages');
 
 gulp.task("style", function() {
 	gulp.src("sass/style.scss")
@@ -22,6 +23,11 @@ gulp.task("style", function() {
 		]))
 		.pipe(gulp.dest("css"))
 		.pipe(server.reload({stream: true}));
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task("serve", ["style"], function() {
